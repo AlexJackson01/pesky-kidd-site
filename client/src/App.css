@@ -100,7 +100,26 @@
   padding-bottom: 10px;
 }
 
+a {
+  color:#FCFBF6;
+  text-decoration: none;
+}
+
+.shows-subtitle {
+  font-family: "NexaSlab";
+  color:#FCFBF6;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.recents-video {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
 .footer {
   background-color: black;
-  color: white;
+  color:#FCFBF6;
 }
