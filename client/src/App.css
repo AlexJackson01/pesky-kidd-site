@@ -15,7 +15,7 @@
 .app-body {
   background-image: url(./assets/images/background.png);
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .container {
@@ -51,18 +51,34 @@
   z-index: -1;
 }
 
+.player-div {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center; 
+}
+
 .spotify-player {
-  height: 500px;
+  height: 550px;
+  width: 400px;
+  /* padding-top: 100px; */
+  /* height: 500px;
   width: 500px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .header {
   font-family: "Zuba";
   color: #5C9EA0;
   font-size: 100px;
+  text-align: center;
+}
+
+.record-name {
+  font-family: "NexaSlab";
+  color: #FCFBF6;
 }
 
 .music-cover {
@@ -71,9 +87,17 @@
 
 .releases-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
+}
+
+.releases-header {
+  text-align: center;
+  font-family: "NexaSlab";
+  color:#5C9EA0;
+  font-size: 40px;
+  padding-bottom: 10px;
 }
 
 .footer {
