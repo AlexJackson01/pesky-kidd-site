@@ -10,7 +10,7 @@ import ContactPage from './screens/ContactPage'
 
 function App () {
   return (
-    <div className='App'>
+    <div>
       <Nav />
       <Routes>
         <Route path='/' element={<Intro />} />

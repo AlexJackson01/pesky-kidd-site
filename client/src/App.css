@@ -12,6 +12,16 @@
                             'embedded-opentype', and 'svg' */
 }
 
+.app-body {
+  background-image: url(./assets/images/background.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  padding: 50px;
+}
+
 .pesky-logo {
   height: 100px;
   padding-top: 20px;
@@ -39,4 +49,22 @@
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+.spotify-player {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  font-family: "Zuba";
+  color: #5C9EA0;
+  font-size: 100px;
+}
+
+.music-cover {
+  height: 200px;
 }
