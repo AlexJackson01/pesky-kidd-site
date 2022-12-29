@@ -7,8 +7,13 @@ import ShowsPage from './screens/ShowsPage'
 import MusicPage from './screens/MusicPage'
 import GalleryPage from './screens/GalleryPage'
 import ContactPage from './screens/ContactPage'
+import Footer from './components/Footer'
+import { useLocation } from 'react-router-dom'
 
 function App () {
+
+  const { pathname } = useLocation();
+
   return (
     <div>
       <Nav />
@@ -20,6 +25,7 @@ function App () {
         <Route path='/gallery' element={<GalleryPage />} />
         <Route path='/contact' element={<ContactPage />} />
       </Routes>
+      {pathname === "/" ? null : <Footer />}
     </div>
   )
 }

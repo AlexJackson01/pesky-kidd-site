@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'Zuba';
-  src: local('Zuba'), url(./assets/fonts/Zubajda.ttf) format('truetype');
+  src: local('Zuba'), url(./assets/fonts/Zubajda\ Dt.ttf) format('truetype');
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
@@ -67,4 +67,16 @@
 
 .music-cover {
   height: 200px;
+}
+
+.releases-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.footer {
+  background-color: black;
+  color: white;
 }

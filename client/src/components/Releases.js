@@ -12,12 +12,14 @@ export default function Releases() {
   return (
     <div>
         <h1 className='header'>Releases</h1>
+        <div className='releases-section'>
         {music.map((record) => (
             <div>
                 <a href={record.url} target="_blank"><img src={record.image} className="music-cover" alt="Record cover" /></a>
                 <h2>{record.name}</h2>
             </div>
         ))}
+        </div>
     </div>
   )
 }
