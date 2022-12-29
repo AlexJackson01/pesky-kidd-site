@@ -40,10 +40,22 @@ function Nav (props) {
       <Divider />
       <List>
         {navItems.map(item => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+          <ListItem key={item} disablePadding sx={{ textAlign: 'center', justifyContent: 'center' }}>
+                            <NavLink
+                      to={item.toLowerCase()}
+                      style={{
+                        textDecoration: 'none',
+                        textTransform: "none",
+                        color: 'black',
+                        fontFamily: "NexaSlab",
+                        fontSize: 20
+                      }}
+                    >
+                                    <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary={item} />
             </ListItemButton>
+                    </NavLink>
+
           </ListItem>
         ))}
         <IconButton
@@ -101,14 +113,19 @@ function Nav (props) {
             {navItems.map(item => (
               <Button
                 key={item}
-                sx={{
-                  textTransform: 'none',
-                  color: 'black',
-                  fontFamily: 'NexaSlab',
-                  fontSize: 20
-                }}
               >
-                {item}
+                <NavLink
+                      to={item.toLowerCase()}
+                      style={{
+                        textDecoration: 'none',
+                        textTransform: "none",
+                        color: 'black',
+                        fontFamily: "NexaSlab",
+                        fontSize: 20
+                      }}
+                    >
+                        {item}
+                    </NavLink>
               </Button>
             ))}
             <IconButton
