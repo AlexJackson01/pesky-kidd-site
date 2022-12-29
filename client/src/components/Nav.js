@@ -33,11 +33,19 @@ function Nav (props) {
   }
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', backgroundColor: '#FCFBF6', background: "100vh" }}>
-      <Typography variant='h6' sx={{ my: 2, paddingTop: 5}}>
-        <img src={WhiteLogo} className='pesky-drawer' alt='Pesky Kidd logo' />
+    <Box
+      onClick={handleDrawerToggle}
+      sx={{
+        textAlign: 'center',
+        backgroundColor: '#FCFBF6',
+        background: '100vh'
+      }}
+    >
+      <Typography variant='h6' sx={{ my: 2, paddingTop: 5 }}>
+        <NavLink to='/'>
+          <img src={WhiteLogo} className='pesky-drawer' alt='Pesky Kidd logo' />
+        </NavLink>
         <h1 className='nav-heading'>Pesky Kidd</h1>
-
       </Typography>
       <Divider />
       <List>
@@ -102,7 +110,9 @@ function Nav (props) {
             <MenuIcon fontSize='large' />
           </IconButton>
           <Typography sx={{ display: { md: 'none' }, paddingRight: 5 }}>
-            <img src={Logo} className='pesky-drawer' alt='Pesky Kidd logo' />
+            <NavLink to='/'>
+              <img src={Logo} className='pesky-drawer' alt='Pesky Kidd logo' />
+            </NavLink>
           </Typography>
           <Typography sx={{ display: { md: 'none' } }}>
             {/* <h1 className='nav-heading'>Pesky Kidd</h1> */}
@@ -115,7 +125,13 @@ function Nav (props) {
               display: { xs: 'none', sm: 'none', md: 'block' }
             }}
           >
-            <Box sx={{ display: 'flex', justifyContent: "flex-start", alignItems: "center" }}>
+            <Box
+              sx={{
+                display: 'flex',
+                justifyContent: 'flex-start',
+                alignItems: 'center'
+              }}
+            >
               <NavLink to='/'>
                 <img src={Logo} className='pesky-logo' alt='Pesky Kidd logo' />
               </NavLink>
@@ -132,7 +148,7 @@ function Nav (props) {
                     textTransform: 'none',
                     color: 'black',
                     fontFamily: 'NexaSlab',
-                    fontSize: 20,
+                    fontSize: 20
                   }}
                 >
                   {item}

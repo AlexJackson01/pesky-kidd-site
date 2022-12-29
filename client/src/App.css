@@ -67,7 +67,7 @@
 }
 
 .spotify-player {
-  height: 550px;
+  height: 450px;
   width: 400px;
   /* padding-top: 100px; */
   /* height: 500px;
@@ -153,6 +153,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .footer {

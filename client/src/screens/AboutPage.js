@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function AboutPage() {
   return (
-    <div>AboutPage</div>
+    <div className='app-body container'>
+
+    </div>
   )
 }
