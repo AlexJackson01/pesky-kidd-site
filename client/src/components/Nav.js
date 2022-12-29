@@ -50,10 +50,10 @@ function Nav (props) {
           href='https://www.instagram.com/peskykiddofficial/'
           target='_blank'
         >
-          <InstagramIcon sx={{ color: 'black' }} />
+          <InstagramIcon fontSize="large" sx={{ color: 'black' }} />
         </IconButton>
         <IconButton href='https://www.facebook.com/peskyk1dd/' target='_blank'>
-          <FacebookIcon sx={{ color: 'black' }} />
+          <FacebookIcon fontSize="large" sx={{ color: 'black' }} />
         </IconButton>
       </List>
     </Box>
@@ -66,9 +66,9 @@ function Nav (props) {
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar
-        sx={{ position: 'sticky', backgroundColor: '#FCFBF6', color: 'black' }}
+        sx={{ position: 'sticky', backgroundColor: '#FCFBF6', color: 'black', height: 150, justifyContent: "center" }}
       >
-        <Toolbar>
+        <Toolbar sx={{justifyContent: "space-between"}}>
           <IconButton
             color='inherit'
             aria-label='open drawer'
@@ -76,8 +76,14 @@ function Nav (props) {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { md: 'none' } }}
           >
-            <MenuIcon />
+            <MenuIcon fontSize='large'/>
           </IconButton>
+          <Typography sx={{display: {md: "none"}}}>
+              <img src={Logo} className='pesky-drawer' alt='Pesky Kidd logo' />
+              </Typography>
+              <Typography sx={{display: {md: "none"}}}>
+        <h1 className='nav-heading'>Pesky Kidd</h1>
+        </Typography>
           <Typography
             variant='h6'
             component='div'
@@ -99,7 +105,7 @@ function Nav (props) {
                   textTransform: 'none',
                   color: 'black',
                   fontFamily: 'NexaSlab',
-                  fontSize: 18
+                  fontSize: 20
                 }}
               >
                 {item}
@@ -109,13 +115,13 @@ function Nav (props) {
               href='https://www.instagram.com/peskykiddofficial/'
               target='_blank'
             >
-              <InstagramIcon sx={{ color: 'black' }} />
+              <InstagramIcon fontSize="large" sx={{ color: 'black' }} />
             </IconButton>
             <IconButton
               href='https://www.facebook.com/peskyk1dd/'
               target='_blank'
             >
-              <FacebookIcon sx={{ color: 'black' }} />
+              <FacebookIcon fontSize="large" sx={{ color: 'black' }} />
             </IconButton>
           </Box>
         </Toolbar>

@@ -20,9 +20,23 @@
 
 .pesky-drawer {
   height: 100px;
+  display: block;
+  margin: 0 auto;
 }
 
 .nav-heading {
   font-family: "Zuba";
   font-size: 45px;
+}
+
+.intro-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
