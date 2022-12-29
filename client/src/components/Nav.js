@@ -33,39 +33,44 @@ function Nav (props) {
   }
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant='h6' sx={{ my: 2 }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', backgroundColor: '#FCFBF6', background: "100vh" }}>
+      <Typography variant='h6' sx={{ my: 2, paddingTop: 5}}>
         <img src={WhiteLogo} className='pesky-drawer' alt='Pesky Kidd logo' />
+        <h1 className='nav-heading'>Pesky Kidd</h1>
+
       </Typography>
       <Divider />
       <List>
         {navItems.map(item => (
-          <ListItem key={item} disablePadding sx={{ textAlign: 'center', justifyContent: 'center' }}>
-                            <NavLink
-                      to={item.toLowerCase()}
-                      style={{
-                        textDecoration: 'none',
-                        textTransform: "none",
-                        color: 'black',
-                        fontFamily: "NexaSlab",
-                        fontSize: 20
-                      }}
-                    >
-                                    <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-                    </NavLink>
-
+          <ListItem
+            key={item}
+            disablePadding
+            sx={{ textAlign: 'center', justifyContent: 'center' }}
+          >
+            <NavLink
+              to={item.toLowerCase()}
+              style={{
+                textDecoration: 'none',
+                textTransform: 'none',
+                color: 'black',
+                fontFamily: 'NexaSlab',
+                fontSize: 20
+              }}
+            >
+              <ListItemButton sx={{ textAlign: 'center' }}>
+                <ListItemText primary={item} />
+              </ListItemButton>
+            </NavLink>
           </ListItem>
         ))}
         <IconButton
           href='https://www.instagram.com/peskykiddofficial/'
           target='_blank'
         >
-          <InstagramIcon fontSize="large" sx={{ color: 'black' }} />
+          <InstagramIcon fontSize='large' sx={{ color: 'black' }} />
         </IconButton>
         <IconButton href='https://www.facebook.com/peskyk1dd/' target='_blank'>
-          <FacebookIcon fontSize="large" sx={{ color: 'black' }} />
+          <FacebookIcon fontSize='large' sx={{ color: 'black' }} />
         </IconButton>
       </List>
     </Box>
@@ -78,9 +83,15 @@ function Nav (props) {
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar
-        sx={{ position: 'sticky', backgroundColor: '#FCFBF6', color: 'black', height: 150, justifyContent: "center" }}
+        sx={{
+          position: 'sticky',
+          backgroundColor: '#FCFBF6',
+          color: 'black',
+          height: 180,
+          justifyContent: 'center'
+        }}
       >
-        <Toolbar sx={{justifyContent: "space-between"}}>
+        <Toolbar sx={{ justifyContent: 'space-between' }}>
           <IconButton
             color='inherit'
             aria-label='open drawer'
@@ -88,57 +99,57 @@ function Nav (props) {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { md: 'none' } }}
           >
-            <MenuIcon fontSize='large'/>
+            <MenuIcon fontSize='large' />
           </IconButton>
-          <Typography sx={{display: {md: "none"}}}>
-              <img src={Logo} className='pesky-drawer' alt='Pesky Kidd logo' />
-              </Typography>
-              <Typography sx={{display: {md: "none"}}}>
-        <h1 className='nav-heading'>Pesky Kidd</h1>
-        </Typography>
+          <Typography sx={{ display: { md: 'none' }, paddingRight: 5 }}>
+            <img src={Logo} className='pesky-drawer' alt='Pesky Kidd logo' />
+          </Typography>
+          <Typography sx={{ display: { md: 'none' } }}>
+            {/* <h1 className='nav-heading'>Pesky Kidd</h1> */}
+          </Typography>
           <Typography
             variant='h6'
             component='div'
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'none', md: 'block' } }}
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'none', sm: 'none', md: 'block' }
+            }}
           >
-            <Box sx={{ display: "flex"}}>
-            <NavLink to='/'>
-              <img src={Logo} className='pesky-logo' alt='Pesky Kidd logo' />
-              
-            </NavLink>
-            <h1 className='nav-heading'>Pesky Kidd</h1>
+            <Box sx={{ display: 'flex', justifyContent: "flex-start", alignItems: "center" }}>
+              <NavLink to='/'>
+                <img src={Logo} className='pesky-logo' alt='Pesky Kidd logo' />
+              </NavLink>
+              <h1 className='nav-heading'>Pesky Kidd</h1>
             </Box>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
             {navItems.map(item => (
-              <Button
-                key={item}
-              >
+              <Button key={item}>
                 <NavLink
-                      to={item.toLowerCase()}
-                      style={{
-                        textDecoration: 'none',
-                        textTransform: "none",
-                        color: 'black',
-                        fontFamily: "NexaSlab",
-                        fontSize: 20
-                      }}
-                    >
-                        {item}
-                    </NavLink>
+                  to={item.toLowerCase()}
+                  style={{
+                    textDecoration: 'none',
+                    textTransform: 'none',
+                    color: 'black',
+                    fontFamily: 'NexaSlab',
+                    fontSize: 20,
+                  }}
+                >
+                  {item}
+                </NavLink>
               </Button>
             ))}
             <IconButton
               href='https://www.instagram.com/peskykiddofficial/'
               target='_blank'
             >
-              <InstagramIcon fontSize="large" sx={{ color: 'black' }} />
+              <InstagramIcon fontSize='large' sx={{ color: 'black' }} />
             </IconButton>
             <IconButton
               href='https://www.facebook.com/peskyk1dd/'
               target='_blank'
             >
-              <FacebookIcon fontSize="large" sx={{ color: 'black' }} />
+              <FacebookIcon fontSize='large' sx={{ color: 'black' }} />
             </IconButton>
           </Box>
         </Toolbar>

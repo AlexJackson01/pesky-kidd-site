@@ -24,8 +24,16 @@
 
 .pesky-logo {
   height: 100px;
-  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 20px; */
   padding-right: 20px;
+  text-align: center;
+  /* position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%); */
 }
 
 .pesky-drawer {
@@ -36,7 +44,7 @@
 
 .nav-heading {
   font-family: "Zuba";
-  font-size: 45px;
+  font-size: 55px;
 }
 
 .intro-video {
@@ -48,7 +56,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .player-div {
@@ -96,8 +104,15 @@
   text-align: center;
   font-family: "NexaSlab";
   color:#5C9EA0;
-  font-size: 40px;
-  padding-bottom: 10px;
+  font-size: 30px;
+  margin-bottom: -1px;
+}
+
+.spotify-logo {
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 a {
@@ -117,9 +132,31 @@ a {
   width: 100%;
   margin: 0 auto;
   display: block;
+  padding-bottom: 50px;
+}
+
+.selected-photo {
+  height: 500px;
+  display: block; 
+  margin: 0 auto;
+}
+
+.selected-title {
+  color:black;
+  text-align: center;
+  font-family: "NexaSlab";
+  font-style: italic;
+  font-size: 25px;
+}
+
+.photo-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
-  background-color: black;
+  padding: 80px;
+  background-color: #FCFBF6;
   color:#FCFBF6;
 }
