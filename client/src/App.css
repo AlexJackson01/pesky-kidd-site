@@ -156,6 +156,17 @@ a {
   padding-bottom: 20px;
 }
 
+.band-blurb {
+  font-family: "NexaSlab";
+  color: white;
+  font-size: 20px;
+}
+
+.blurb-div {
+  background-color: #444E5A;
+  padding: 45px;
+}
+
 .footer {
   padding: 80px;
   background-color: #FCFBF6;

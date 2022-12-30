@@ -1,6 +1,6 @@
 import React from 'react'
-import Upcoming from '../components/Upcoming'
-import Recent from '../components/Recent'
+import Upcoming from "../components/shows/Upcoming"
+import Recent from '../components/shows/Recent'
 import { Grid } from '@mui/material'
 
 export default function ShowsPage () {

@@ -1,6 +1,6 @@
 import React from 'react'
-import SpotifyPlayer from '../components/SpotifyPlayer'
-import Releases from '../components/Releases'
+import SpotifyPlayer from '../components/releases/SpotifyPlayer'
+import Releases from '../components/releases/Releases'
 import { Grid } from '@mui/material'
 
 export default function MusicPage () {

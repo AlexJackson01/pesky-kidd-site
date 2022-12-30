@@ -1,5 +1,5 @@
 import React from 'react'
-import Video from '../assets/videos/intro.mp4'
+import Video from '../../assets/videos/intro.mp4'
 
 export default function Recent () {
   return (

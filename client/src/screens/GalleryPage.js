@@ -1,5 +1,5 @@
 import React from 'react'
-import PhotoGallery from '../components/PhotoGallery'
+import PhotoGallery from "../components/gallery/PhotoGallery";
 import { Grid } from '@mui/material'
 
 export default function GalleryPage() {

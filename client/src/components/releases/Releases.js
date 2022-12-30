@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import CR from '../assets/images/CR.jpg'
-import OH from '../assets/images/OH.jpg'
-import Spotify from '../assets/images/spotify.png'
+import CR from "../../assets/images/CR.jpg"
+import OH from '../../assets/images/OH.jpg'
+import Spotify from '../../assets/images/spotify.png'
 
 export default function Releases () {
   const [music, setMusic] = useState([
