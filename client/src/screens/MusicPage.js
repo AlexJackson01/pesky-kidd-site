@@ -5,7 +5,7 @@ import { Grid } from '@mui/material'
 
 export default function MusicPage () {
   return (
-    <div className='app-body container'>
+    <div className='container'>
       <h1 className='header'>Releases</h1>
       <Grid container spacing={8}>
         <Grid

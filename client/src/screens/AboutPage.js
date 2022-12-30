@@ -8,22 +8,19 @@ export default function AboutPage () {
   return (
     <div className='app-body container'>
       <h1 className='header'>About</h1>
-      <Grid container spacing={0}>
-        <Grid
-          item
-          sm={12}
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
-          }}
-        >
-<Band />        </Grid>
-        <Grid item sm={12}           sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
-          }}>
+      <Grid
+        container
+        spacing={0}
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+      >
+        <Grid item sm={12}>
+          <Band />{' '}
+        </Grid>
+        <Grid item sm={12}>
           <Blurb />
         </Grid>
       </Grid>

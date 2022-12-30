@@ -15,7 +15,7 @@ function App () {
   const { pathname } = useLocation();
 
   return (
-    <div>
+    <div className='app-body'>
       <Nav />
       <Routes>
         <Route path='/' element={<Intro />} />

@@ -186,6 +186,25 @@ a {
   justify-content: space-between;
 }
 
+.contact-form {
+  background-color: #444E5A;
+  padding: 50px;
+}
+
+.socials-div {
+  padding: 50px;
+  color: white;
+  font-family: "NexaSlab";
+  text-align: center;
+}
+
+.contact-header {
+  font-family: "NexaSlab";
+  text-align: center;
+  color:#FCFBF6;
+  padding-bottom: 10px;
+}
+
 .footer {
   padding: 80px;
   background-color: #FCFBF6;
