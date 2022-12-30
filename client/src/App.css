@@ -165,8 +165,8 @@ a {
 .blurb-div {
   margin-left: 200px;
   margin-right: 200px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-top: 50px; */
+  /* padding-bottom: 50px; */
   text-align: center;
 }
 
@@ -179,6 +179,7 @@ a {
   margin-top: 30px;
   background-color: #444E5A;
   padding: 50px;
+  margin-bottom: 50px;
 }
 
 .band-info {
@@ -186,7 +187,7 @@ a {
   justify-content: space-between;
 }
 
-.contact-form {
+.contact-page {
   background-color: #444E5A;
   padding: 50px;
 }

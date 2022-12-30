@@ -50,7 +50,7 @@ export default function Form () {
 //   }
 
   return (
-    <div className='contact-form'>
+    <div>
         <h2 className='contact-header'>For general and booking enquiries, contact us here:</h2>
         {/* onSubmit={sendEmail} */}
       <form ref={form} >

@@ -18,10 +18,10 @@ export default function AboutPage () {
         }}
       >
         <Grid item sm={12}>
-          <Band />{' '}
+          <Blurb />{' '}
         </Grid>
         <Grid item sm={12}>
-          <Blurb />
+          <Band />
         </Grid>
       </Grid>
     </div>
