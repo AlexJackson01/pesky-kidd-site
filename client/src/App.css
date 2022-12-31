@@ -189,6 +189,8 @@ a {
 
 .contact-page {
   background-color: #444E5A;
+  opacity: 70%;
+  border-radius: 30px;
   padding: 50px;
 }
 
