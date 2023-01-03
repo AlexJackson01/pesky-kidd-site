@@ -3,10 +3,11 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Modal, { getModalUtilityClass } from '@mui/material/Modal'
 import { items } from './O2Carousel'
-import { items2 } from './ARCarousel'
+import { abbey } from './ARCarousel'
 import { warrington } from "./WarCarousel"
 import Carousel from 'react-material-ui-carousel'
 import WarCover from '../../assets/images/warrington/14.jpg'
+import AbbeyCover from '../../assets/images/abbey/1.jpg'
 
 const style = {
   position: 'absolute',
@@ -28,8 +29,8 @@ export default function PhotoAlbums () {
       coverImg: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e'
     },
     {
-      name: 'Burger',
-      coverImg: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d'
+      name: 'Pesky Kidd @ Abbey Road Studios, London, November 2022',
+      coverImg: AbbeyCover
     },
     {
       name: 'Pesky Kidd @ The Warrington Hotel, London, October 2022',
@@ -49,8 +50,8 @@ export default function PhotoAlbums () {
     if (album.name === 'Breakfast') {
       setCarousel(items)
       console.log(carousel)
-    } else if (album.name === 'Burger') {
-      setCarousel(items2)
+    } else if (album.name === 'Pesky Kidd @ Abbey Road Studios, London, November 2022') {
+      setCarousel(abbey)
     } else {
       setCarousel(warrington)
     }
@@ -61,6 +62,9 @@ export default function PhotoAlbums () {
       <div style={{ width: "100%", height: "100%" }}>
         <div>
         <img className="carousel-image" src={item.image} />
+        {/* <video controls>
+        <source src={item.image} type='video/mp4' />
+      </video> */}
         </div>
         <div>
           <h2 className='carousel-title'>{item.description}</h2>
