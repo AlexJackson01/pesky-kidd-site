@@ -163,9 +163,9 @@ a {
 
 .photo-gallery {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  padding-bottom: 20px;
+  margin: 20px;
 }
 
 .band-blurb {
@@ -202,6 +202,11 @@ a {
 
 .photo-albums {
   height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .carousel-image {
@@ -209,6 +214,19 @@ a {
   display: block;
   margin: 0 auto;
 }
+
+.carousel-vids {
+  height: 100%;
+  margin-bottom: 100px;
+}
+
+.gallery-header {
+  text-align: center;
+  font-family: "Courier Prime";
+  color:#5C9EA0;
+  font-size: 40px;
+}
+
 
 .carousel-title {
   font-family: "Courier Prime";

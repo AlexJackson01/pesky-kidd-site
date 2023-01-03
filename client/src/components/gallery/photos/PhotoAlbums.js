@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
+import "../../../App.css";
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Modal, { getModalUtilityClass } from '@mui/material/Modal'
 import { items } from './O2Carousel'
-import { abbey } from './ARCarousel'
-import { warrington } from "./WarCarousel"
+import { abbey } from "./ARCarousel"
+import { warrington } from "../WarCarousel"
 import Carousel from 'react-material-ui-carousel'
-import WarCover from '../../assets/images/warrington/14.jpg'
-import AbbeyCover from '../../assets/images/abbey/1.jpg'
+import WarCover from '../../../assets/images/warrington/14.jpg'
+import AbbeyCover from '../../../assets/images/abbey/1.jpg'
+import { Grid } from '@mui/material';
 
 const style = {
   position: 'absolute',
@@ -24,10 +26,6 @@ const style = {
 
 export default function PhotoAlbums () {
   const [albums, setAlbums] = useState([
-    {
-      name: 'Breakfast',
-      coverImg: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e'
-    },
     {
       name: 'Pesky Kidd @ Abbey Road Studios, London, November 2022',
       coverImg: AbbeyCover
@@ -47,10 +45,7 @@ export default function PhotoAlbums () {
     setOpen(true)
     setSelectedAlbum(album.name)
 
-    if (album.name === 'Breakfast') {
-      setCarousel(items)
-      console.log(carousel)
-    } else if (album.name === 'Pesky Kidd @ Abbey Road Studios, London, November 2022') {
+    if (album.name === 'Pesky Kidd @ Abbey Road Studios, London, November 2022') {
       setCarousel(abbey)
     } else {
       setCarousel(warrington)
@@ -83,16 +78,25 @@ export default function PhotoAlbums () {
 
   return (
     <div>
+      <h1 className='gallery-header'>Photos</h1>
       <div className='album-div'>
-        {albums.map(album => (
-          <div>
+          <Grid container spacing={0}>
+            <Grid item xs={12} sm={12} md={6} sx={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
             <img
-              src={album.coverImg}
+              src={albums[0].coverImg}
               className='photo-albums'
-              onClick={() => setAlbum(album)}
+              onClick={() => setAlbum(albums[0])}
             />
-          </div>
-        ))}
+            </Grid>
+            <Grid item xs={12} sm={12} md={6} sx={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
+            <img
+              src={albums[1].coverImg}
+              className='photo-albums'
+              onClick={() => setAlbum(albums[1])}
+            />
+            </Grid>
+          </Grid>
+
       </div>
 
       <Modal
