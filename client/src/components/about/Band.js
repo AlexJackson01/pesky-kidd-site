@@ -5,7 +5,7 @@ export default function Band () {
     { name: 'Ben Forsythe', instrument: ['Vocals', 'Rhythm Guitar'], img: '' },
     { name: 'Luca Chessa', instrument: ['Lead Guitar'], img: '' },
     { name: 'Lee Godkin', instrument: ['Keyboard', 'Backing vocals'], img: '' },
-    { name: 'Andy Harrison', instrument: ['Bass'], img: '' },
+    // { name: 'Andy Harrison', instrument: ['Bass'], img: '' },
     { name: 'Johnnie Shinner', instrument: ['Drums'], img: '' }
   ])
 
