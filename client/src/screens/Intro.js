@@ -1,12 +1,12 @@
-import React from 'react';
-import Video from '../assets/videos/intro.mp4';
+import React from 'react'
+import Video from '../assets/videos/intro.mp4'
 
-export default function Intro() {
+export default function Intro () {
   return (
     <div>
-        <video loop autoPlay controls className="intro-video">
-                    <source src={Video} type="video/mp4" />
-            </video>
+      <video loop autoPlay controls className='intro-video'>
+        <source src={Video} type='video/mp4' />
+      </video>
     </div>
   )
 }
