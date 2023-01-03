@@ -63,7 +63,7 @@ function Nav (props) {
                 textDecoration: 'none',
                 textTransform: 'none',
                 color: 'black',
-                fontFamily: 'NexaSlab',
+                fontFamily: 'Cutive',
                 fontSize: 20
               }}
             >
@@ -158,8 +158,9 @@ function Nav (props) {
                     textDecoration: 'none',
                     textTransform: 'none',
                     color: 'black',
-                    fontFamily: 'NexaSlab',
-                    fontSize: 20
+                    fontFamily: 'Courier Prime',
+                    fontSize: 22,
+                    fontWeight: "bold"
                   }}
                 >
                   {item}

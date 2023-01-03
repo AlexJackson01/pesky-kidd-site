@@ -61,7 +61,7 @@ export default function Form () {
               justifyContent: 'center',
               alignItems: 'center',
               paddingBottom: '20px',
-              color: "#FCFBF6"
+              color: "#FCFBF6",
             }}
           >
             <AccountCircle sx={{ color: '#FCFBF6', mr: 1, my: 0.5 }} />

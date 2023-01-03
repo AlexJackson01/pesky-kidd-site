@@ -14,11 +14,11 @@ function createData(date, location, tickets) {
 }
 
 const TabHeader = styled(TableCell)(({ theme }) => ({
-    color: "white", fontFamily: "NexaSlab", fontSize: 20, fontWeight: "bold"
+    color: "white", fontFamily: "Courier Prime", fontSize: 25, fontWeight: "bold"
   }))
 
   const TabData = styled(TableCell)(({ theme }) => ({
-    color: "white", fontFamily: "NexaSlab", fontSize: 15
+    color: "white", fontFamily: "Courier Prime", fontSize: 20
   }))
 
   const TicketButton = styled(Button)(({ theme }) => ({
@@ -26,9 +26,10 @@ const TabHeader = styled(TableCell)(({ theme }) => ({
     textDecoration: "none",
     backgroundColor: '#5C9EA0',
     color: 'white',
-    fontFamily: "NexaSlab",
+    fontFamily: "Courier Prime",
     // padding: '10px 20px 10px 20px',
     fontSize: 20,
+    width: 180,
     '&:hover': {
       backgroundColor: '#444E5A',
       color: "white"
