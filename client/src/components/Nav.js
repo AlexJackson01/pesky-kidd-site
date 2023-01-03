@@ -20,6 +20,8 @@ import WhiteLogo from '../assets/images/logo-no-bg.png'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import { NavLink } from 'react-router-dom'
+import Spotify from '../assets/images/spotify-icon.png'
+import Tiktok from '../assets/images/tiktok-icon.png'
 
 const drawerWidth = 240
 const navItems = ['About', 'Shows', 'Releases', 'Gallery', 'Contact']
@@ -79,6 +81,15 @@ function Nav (props) {
         </IconButton>
         <IconButton href='https://www.facebook.com/peskyk1dd/' target='_blank'>
           <FacebookIcon fontSize='large' sx={{ color: 'black' }} />
+        </IconButton>
+        <IconButton
+          href='https://open.spotify.com/artist/6GU3Fg2x5wvm0PIHryh3Sf?si=gHjTIqBEShysv1trhsfKFg'
+          target='_blank'
+        >
+          <img src={Spotify} className='social-icons' alt='Spotify icon' />
+        </IconButton>
+        <IconButton href='https://www.tiktok.com/@peskykidd' target='_blank'>
+          <img src={Tiktok} className='social-icons' alt='Spotify icon' />
         </IconButton>
       </List>
     </Box>
@@ -166,6 +177,18 @@ function Nav (props) {
               target='_blank'
             >
               <FacebookIcon fontSize='large' sx={{ color: 'black' }} />
+            </IconButton>
+            <IconButton
+              href='https://open.spotify.com/artist/6GU3Fg2x5wvm0PIHryh3Sf?si=gHjTIqBEShysv1trhsfKFg'
+              target='_blank'
+            >
+              <img src={Spotify} className='social-icons' alt='Spotify icon' />
+            </IconButton>
+            <IconButton
+              href='https://www.tiktok.com/@peskykidd'
+              target='_blank'
+            >
+              <img src={Tiktok} className='social-icons' alt='Spotify icon' />
             </IconButton>
           </Box>
         </Toolbar>

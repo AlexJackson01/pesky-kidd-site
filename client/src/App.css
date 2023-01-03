@@ -36,6 +36,11 @@
   -ms-transform: translateY(-50%); */
 }
 
+.social-icons {
+  height:32px;
+  width: 32px;
+}
+
 .pesky-drawer {
   height: 100px;
   display: block;

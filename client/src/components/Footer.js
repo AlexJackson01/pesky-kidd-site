@@ -4,6 +4,8 @@ import IconButton from '@mui/material/IconButton'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import Logo from "../assets/images/logo-no-bg.png"
+import Spotify from "../assets/images/spotify-icon.png"
+import Tiktok from "../assets/images/tiktok-icon.png"
 
 export default function Footer () {
   return (
@@ -25,6 +27,18 @@ export default function Footer () {
           >
             <FacebookIcon fontSize='large' sx={{ color: 'black' }} />
           </IconButton>
+          <IconButton
+              href='https://open.spotify.com/artist/6GU3Fg2x5wvm0PIHryh3Sf?si=gHjTIqBEShysv1trhsfKFg'
+              target='_blank'
+            >
+              <img src={Spotify} className="social-icons" alt="Spotify icon" />
+            </IconButton>
+            <IconButton
+              href='https://www.tiktok.com/@peskykidd'
+              target='_blank'
+            >
+              <img src={Tiktok} className="social-icons" alt="Spotify icon" />
+            </IconButton>
         </Grid>
       </Grid>
     </div>
