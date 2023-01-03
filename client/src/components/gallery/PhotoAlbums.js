@@ -2,17 +2,19 @@ import React, { useState } from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Modal, { getModalUtilityClass } from '@mui/material/Modal'
-import { items } from "./O2Carousel"
-import {items2} from './ARCarousel'
+import { items } from './O2Carousel'
+import { items2 } from './ARCarousel'
+import { warrington } from "./WarCarousel"
 import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@mui/material'
+import WarCover from '../../assets/images/warrington/14.jpg'
 
 const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 800,
+  height: 700,
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -30,51 +32,50 @@ export default function PhotoAlbums () {
       coverImg: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d'
     },
     {
-      name: 'Camera',
-      coverImg: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45'
+      name: 'Pesky Kidd @ The Warrington Hotel, London, October 2022',
+      coverImg: WarCover
     }
   ])
   const [open, setOpen] = React.useState(false)
-//   const handleOpen = () => setOpen(true)
+  //   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
   const [selectedAlbum, setSelectedAlbum] = useState(null)
   const [carousel, setCarousel] = useState(null)
 
-  const setAlbum = (album) => {
+  const setAlbum = album => {
     setOpen(true)
     setSelectedAlbum(album.name)
-    
-    if (album.name === "Breakfast") {
-        setCarousel(items)
-        console.log(carousel)
-    } else if (album.name === "Burger") {
-        setCarousel(items2)
+
+    if (album.name === 'Breakfast') {
+      setCarousel(items)
+      console.log(carousel)
+    } else if (album.name === 'Burger') {
+      setCarousel(items2)
+    } else {
+      setCarousel(warrington)
     }
   }
 
-
-
-  function Item(props)
-{
+  const Item = ({ item }) => {
     return (
-        <Paper>
-            <h2>{props.item.name}</h2>
-            <p>{props.item.description}</p>
+      <div style={{ width: "100%", height: "100%" }}>
+        <div>
+        <img className="carousel-image" src={item.image} />
+        </div>
+        <div>
+          <h2 className='carousel-title'>{item.description}</h2>
+        </div>
+        </div>
+    );
+  }
 
-            <Button className="CheckButton">
-                Check it out!
-            </Button>
-        </Paper>
-    )
-}
-
-//   const getModal = (carousel) => {
-//     if (carousel.name === "Breakfast") {
-//         return <O2Carousel />
-//     } else {
-//         return <ARCarousel />
-//     } 
-//   }
+  //   const getModal = (carousel) => {
+  //     if (carousel.name === "Breakfast") {
+  //         return <O2Carousel />
+  //     } else {
+  //         return <ARCarousel />
+  //     }
+  //   }
 
   return (
     <div>
@@ -97,11 +98,17 @@ export default function PhotoAlbums () {
         aria-describedby='modal-modal-description'
       >
         <Box sx={style}>
-        <Carousel>
-            {
-                carousel.map( (album, i) => <Item key={i} item={album} /> )
-            }
-        </Carousel>
+          <Carousel autoPlay indicators={true} >
+            {carousel &&
+              carousel.map((album, i) => (
+                <div>
+              <Item key={i} item={album} />
+              </div>
+              ))}
+          </Carousel>
+          <Typography>
+            <h1 className='carousel-title'>{selectedAlbum}</h1>
+          </Typography>
         </Box>
       </Modal>
     </div>

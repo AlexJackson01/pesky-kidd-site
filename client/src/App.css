@@ -204,10 +204,22 @@ a {
   height: 300px;
 }
 
+.carousel-image {
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel-title {
+  font-family: "Courier Prime";
+  text-align: center;
+}
+
 .album-div {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  margin-right: 5px;
 }
 
 .contact-form {
