@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: 'Zuba';
-  src: local('Zuba'), url(./assets/fonts/Zubajda\ Dt.ttf) format('truetype');
+  font-family: 'LTCutter';
+  src: local('LTCutter'), url(./assets/fonts/Linotype\ Cutter.ttf) format('truetype');
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
@@ -43,7 +43,7 @@
 }
 
 .nav-heading {
-  font-family: "Zuba";
+  font-family: "Cutter";
   font-size: 55px;
 }
 
@@ -78,14 +78,14 @@
 }
 
 .header {
-  font-family: "Zuba";
+  font-family: "Cutter";
   color: #5C9EA0;
   font-size: 100px;
   text-align: center;
 }
 
 .record-name {
-  font-family: "NexaSlab";
+  font-family: "Cutter";
   color: #FCFBF6;
 }
 

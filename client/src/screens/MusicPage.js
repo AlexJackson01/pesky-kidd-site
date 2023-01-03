@@ -1,5 +1,5 @@
 import React from 'react'
-import SpotifyPlayer from '../components/releases/SpotifyPlayer'
+import SpotifyPlayer from '../components/releases/Spotify'
 import Releases from '../components/releases/Releases'
 import { Grid } from '@mui/material'
 
