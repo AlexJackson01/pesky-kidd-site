@@ -200,6 +200,16 @@ a {
   justify-content: space-between;
 }
 
+.photo-albums {
+  height: 300px;
+}
+
+.album-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact-form {
   background-color: #444E5A;
   opacity: 70%;

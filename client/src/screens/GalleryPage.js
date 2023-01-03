@@ -1,6 +1,6 @@
 import React from 'react'
 import PhotoGallery from "../components/gallery/PhotoGallery";
-import VideoGallery from '../components/gallery/VideoGallery';
+import PhotoAlbums from '../components/gallery/PhotoAlbums';
 import { Grid } from '@mui/material'
 
 export default function GalleryPage() {
@@ -8,12 +8,12 @@ export default function GalleryPage() {
     <div className='app-body container'>
               <h1 className='header'>Gallery</h1>
         <Grid container spacing={0}>
-            <Grid item sm={12} md={6}>
-                <PhotoGallery />
+            <Grid item sm={12} md={12} sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                <PhotoAlbums />
             </Grid>
-            <Grid item sm={12} md={6}>
+            {/* <Grid item sm={12} md={6}>
                 <VideoGallery />
-            </Grid>
+            </Grid> */}
         </Grid>
     </div>
   )

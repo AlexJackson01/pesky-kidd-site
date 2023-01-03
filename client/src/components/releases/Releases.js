@@ -20,7 +20,7 @@ export default function Releases () {
   return (
     <div>
       <h2 className='releases-header'>Listen to us on</h2>
-      <img src={Spotify} className="spotify-logo" alt="Spotify logo" />
+      <a href="https://open.spotify.com/artist/6GU3Fg2x5wvm0PIHryh3Sf?si=gHjTIqBEShysv1trhsfKFg"><img src={Spotify} className="spotify-logo" alt="Spotify logo" /></a>
       <div className='releases-section'>
         {music.map(record => (
           <div>
