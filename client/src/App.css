@@ -217,6 +217,16 @@ h4, h6 {
   position: absolute;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 20px;
+}
+.grid-item {
+  padding: 5px;
+  text-align: center;
+}
+
 .band-info {
   margin-top: 30px;
   justify-content: space-between;
