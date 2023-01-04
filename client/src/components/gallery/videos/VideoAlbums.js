@@ -28,7 +28,7 @@ const style = {
 export default function VideoAlbums () {
   const [albums, setAlbums] = useState([
     {
-      name: 'Pesky Kidd @ the O2 Academy2 Islington, London, December 2022',
+      name: 'Pesky Kidd @ The O2 Academy2 Islington, London, December 2022',
       coverImg: O2Cover
     },
   ])
@@ -95,7 +95,7 @@ export default function VideoAlbums () {
               ))}
           </Carousel>
           <Typography>
-            <h1 className='carousel-title'>{selectedAlbum}</h1>
+            <h1 className='carousel-title'>{albums[0].name}</h1>
           </Typography>
         </Box>
       </Modal>
