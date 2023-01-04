@@ -3,13 +3,14 @@ import "../../../App.css";
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Modal, { getModalUtilityClass } from '@mui/material/Modal'
-import { o2 } from './o2'
+import {o2} from './o2'
 import { abbey } from "./abbey"
 import { warrington } from "../WarCarousel"
 import Carousel from 'react-material-ui-carousel'
-import WarCover from '../../../assets/images/warrington/14.jpg'
-import AbbeyCover from '../../../assets/images/abbey/1.jpg'
+import O2Cover from '../../../assets/images/O2Cover.png'
 import { Grid } from '@mui/material';
+import YouTubeEmbed from './YouTubeEmbed';
+
 
 const style = {
   position: 'absolute',
@@ -27,13 +28,9 @@ const style = {
 export default function VideoAlbums () {
   const [albums, setAlbums] = useState([
     {
-      name: 'Pesky Kidd @ Abbey Road Studios, London, November 2022',
-      coverImg: AbbeyCover
+      name: 'Pesky Kidd @ the O2 Academy2 Islington, London, December 2022',
+      coverImg: O2Cover
     },
-    {
-      name: 'Pesky Kidd @ The Warrington Hotel, London, October 2022',
-      coverImg: WarCover
-    }
   ])
   const [open, setOpen] = React.useState(false)
   //   const handleOpen = () => setOpen(true)
@@ -43,27 +40,15 @@ export default function VideoAlbums () {
 
   const setAlbum = album => {
     setOpen(true)
-    setSelectedAlbum(album.name)
-
-    if (album.name === 'Pesky Kidd @ Abbey Road Studios, London, November 2022') {
-      setCarousel(abbey)
-    } else {
-      setCarousel(warrington)
-    }
+    setCarousel(o2)
   }
 
   const Item = ({ item }) => {
     return (
       <div style={{ width: "100%", height: "100%" }}>
-        <div>
-        <img className="carousel-image" src={item.image} />
-        {/* <video controls>
-        <source src={item.image} type='video/mp4' />
-      </video> */}
-        </div>
-        <div>
-          <h2 className='carousel-title'>{item.description}</h2>
-        </div>
+    <div className="App">
+      <YouTubeEmbed embedId={item.id} />
+    </div>
         </div>
     );
   }
@@ -81,19 +66,14 @@ export default function VideoAlbums () {
       <h1 className='gallery-header'>Videos</h1>
       <div className='album-div'>
           <Grid container spacing={0}>
-            <Grid item xs={12} sm={12} md={6} sx={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
+            <Grid item xs={12} sm={12} md={12} sx={{ justifyContent: "center", alignItems: "center"}}>
             <img
-              src={albums[0].coverImg}
+              src={O2Cover}
               className='photo-albums'
-              onClick={() => setAlbum(albums[0])}
+              onClick={() => setAlbum()}
             />
-            </Grid>
-            <Grid item xs={12} sm={12} md={6} sx={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
-            <img
-              src={albums[1].coverImg}
-              className='photo-albums'
-              onClick={() => setAlbum(albums[1])}
-            />
+            <h2 className='album-title'>{albums[0].name}</h2>
+
             </Grid>
           </Grid>
 

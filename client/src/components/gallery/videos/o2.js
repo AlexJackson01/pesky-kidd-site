@@ -1,14 +1,18 @@
-import Vid1 from '../../../assets/videos/abbey/3.mp4'
-import Vid2 from '../../../assets/videos/abbey/6.mp4'
-
-
 export const o2 = [
   {
     name: 'Photo1',
-    src: Vid1
+    id: "IbQe7WEi12Y"
   },
   {
     name: 'Photo2',
-    src: Vid2
+    id: "8_9SOYBOCYQ"
+  },
+  {
+    name: 'Photo2',
+    id: "Cq-UI7oYdhU"
+  },
+  {
+    name: 'Photo2',
+    id: "CNhdOZw99WM"
   },
 ]

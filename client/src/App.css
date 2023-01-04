@@ -189,10 +189,32 @@ a {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 30px;
-  background-color: #444E5A;
-  opacity: 75%;
+  background-color: rgba(68, 78, 90, 0.7);
   padding: 50px;
   margin-bottom: 50px;
+}
+
+.member-pic {
+  height: 200px;
+}
+
+h4, h6 {
+  text-align: center;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .band-info {
@@ -202,11 +224,8 @@ a {
 
 .photo-albums {
   height: 300px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: block;
+  margin: 0 auto;
 }
 
 .carousel-image {
@@ -235,14 +254,20 @@ a {
 
 .album-div {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin-right: 5px;
 }
 
+.album-title {
+  font-family: "Courier Prime";
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
 .contact-form {
-  background-color: #444E5A;
-  opacity: 70%;
+  background-color: rgba(68, 78, 90, 0.7);
   border-radius: 30px;
   padding: 50px;
 }

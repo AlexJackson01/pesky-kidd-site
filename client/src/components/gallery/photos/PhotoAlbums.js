@@ -81,19 +81,23 @@ export default function PhotoAlbums () {
       <h1 className='gallery-header'>Photos</h1>
       <div className='album-div'>
           <Grid container spacing={0}>
-            <Grid item xs={12} sm={12} md={6} sx={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
+            <Grid item xs={12} sm={12} md={6} sx={{ justifyContent: "center", alignItems: "center"}}>
             <img
               src={albums[0].coverImg}
               className='photo-albums'
               onClick={() => setAlbum(albums[0])}
             />
+            <h2 className='album-title'>{albums[0].name}</h2>
+
             </Grid>
-            <Grid item xs={12} sm={12} md={6} sx={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
+            <Grid item xs={12} sm={12} md={6} sx={{ justifyContent: "center", alignItems: "center"}}>
             <img
               src={albums[1].coverImg}
               className='photo-albums'
               onClick={() => setAlbum(albums[1])}
             />
+                        <h2 className='album-title'>{albums[1].name}</h2>
+
             </Grid>
           </Grid>
 
