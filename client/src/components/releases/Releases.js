@@ -96,11 +96,13 @@ export default function Releases ({ setRecord }) {
       top: '50%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
-      width: "70vw",
-      height: "90vh",
+      width: "80%",
+      // height: "80%",
+      // width: "70vw",
+      // height: "90vh",
       // backgroundColor: "rgba(255, 0, 0, 0.5)",
       backgroundImage: `url(${selectedCover})`,
-      backgroundSize: 'cover',
+      // backgroundSize: 'contain',
       border: '2px solid #000',
       boxShadow: 24,
       p: 4,
@@ -114,7 +116,7 @@ export default function Releases ({ setRecord }) {
     <div>
       <div className='music-platforms'>
         <Grid container spacing={2} sx={{justifyContent: "center", alignItems: "center"}}>
-          <Grid item xs={6} md={6}>
+          <Grid item xs={12} md={6}>
             <a href={musicLinks[0].link} target="_blank">
             <img
               src={musicLinks[0].img}
@@ -130,7 +132,7 @@ export default function Releases ({ setRecord }) {
             />
             </a>
           </Grid>
-          <Grid item xs={6} md={6}>
+          <Grid item xs={12} md={6}>
           <a href={musicLinks[1].link} target="_blank">
             <img
               src={musicLinks[1].img}

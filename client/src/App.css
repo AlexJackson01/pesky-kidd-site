@@ -14,11 +14,12 @@
 
 @font-face {
   font-family: 'LTCutter';
-  src: local('LTCutter'), url(./assets/fonts/Linotype\ Cutter.ttf) format('truetype');
-  src: local('LTCutter'), url(./assets/fonts/LinotypeCutter.eot) format('embedded-opentype');
-  src: local('LTCutter'), url(./assets/fonts/LinotypeCutter.woff2) format('woff2');
-  src: local('LTCutter'), url(./assets/fonts/LinotypeCutter.woff) format('woff');
-  src: local('LTCutter'), url(./assets/fonts/LinotypeCutter.svg) format('svg');
+  src: url('./assets/fonts/Linotype\ Cutter.ttf') format('truetype'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/LinotypeCutter.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/LinotypeCutter.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/LinotypeCutter.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./assets/fonts/Linotype\ Cutter.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./assets/fonts/LinotypeCutter.svg') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
@@ -150,21 +151,24 @@
 
 .track-name {
   font-family: "LTCutter";
+  /* font-size: 80%; */
 }
 
 .track-cover {
-  height: 30vh;
+  width: 60%;
   padding-top: 30px;
 }
 
 .track-logo {
-  width: 15vw;
+  width: 150px;
   display: block;
   margin: 0 auto;
   padding-bottom: 10px;
 }
 
 .track-platforms {
+  /* width: 75%; */
+  /* width: 200px; */
   padding-bottom: 20px;
   /* display: inline; */
 }

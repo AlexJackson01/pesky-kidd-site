@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Track({ track }) {
   return (
-        <Paper elevation={7} sx={{width: "75%", textAlign: "center"}}>
+        <Paper elevation={7} sx={{width: "80%", textAlign: "center"}}>
             <img src={track.cover} className="track-cover" />
             <h2 className='track-name'>{track.name}</h2>
             <div className='track-platforms'>
