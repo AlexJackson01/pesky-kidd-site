@@ -13,6 +13,15 @@
 }
 
 @font-face {
+  font-family: 'LTCutter';
+  src: local('LTCutter'), url(./assets/fonts/Linotype\ Cutter.ttf) format('truetype');
+  src: local('LTCutter'), url(./assets/fonts/LinotypeCutter.eot) format('embedded-opentype');
+  src: local('LTCutter'), url(./assets/fonts/LinotypeCutter.woff2) format('woff2');
+  src: local('LTCutter'), url(./assets/fonts/LinotypeCutter.woff) format('woff');
+  src: local('LTCutter'), url(./assets/fonts/LinotypeCutter.svg) format('svg');
+}
+
+@font-face {
   font-family: 'Courier Prime';
   src: local('Courier Prime'), url(./assets/fonts/Courier\ Prime.ttf) format('truetype');
   /* other formats include: 'woff2', 'truetype, 'opentype',
