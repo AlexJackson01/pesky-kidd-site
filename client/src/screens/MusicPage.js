@@ -3,7 +3,7 @@ import SpotifyPlayer from '../components/releases/Spotify'
 import Releases from '../components/releases/Releases'
 import { Grid } from '@mui/material'
 
-export default function MusicPage () {
+export default function MusicPage ({ setRecord, record }) {
   return (
     <div className='app-body container'>
       <h1 className='header'>Releases</h1>
@@ -19,7 +19,7 @@ export default function MusicPage () {
           <SpotifyPlayer />
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={6}>
-          <Releases />
+          <Releases record={record} />
         </Grid>
       </Grid>
     </div>
