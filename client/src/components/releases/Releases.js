@@ -102,7 +102,7 @@ export default function Releases ({ setRecord }) {
       // height: "90vh",
       // backgroundColor: "rgba(255, 0, 0, 0.5)",
       backgroundImage: `url(${selectedCover})`,
-      // backgroundSize: 'contain',
+      backgroundSize: '100%',
       border: '2px solid #000',
       boxShadow: 24,
       p: 4,
