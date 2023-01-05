@@ -87,7 +87,7 @@ export default function Releases ({ setRecord }) {
   const style = {
     modalStyle: {
       backgroundImage: `url(${selectedCover})`,
-      backgroundSize: 'cover',
+      backgroundSize: '100%',
       filter: 'blur',
       border: '2px solid #fff'
     },
@@ -103,6 +103,7 @@ export default function Releases ({ setRecord }) {
       // backgroundColor: "rgba(255, 0, 0, 0.5)",
       backgroundImage: `url(${selectedCover})`,
       backgroundSize: '100%',
+      backgroundRepeat: "repeat",
       border: '2px solid #000',
       boxShadow: 24,
       p: 4,
@@ -115,7 +116,7 @@ export default function Releases ({ setRecord }) {
   return (
     <div>
       <div className='music-platforms'>
-        <Grid container spacing={2} sx={{justifyContent: "center", alignItems: "center"}}>
+        <Grid container spacing={0} sx={{justifyContent: "center", alignItems: "center"}}>
           <Grid item xs={12} md={6}>
             <a href={musicLinks[0].link} target="_blank">
             <img

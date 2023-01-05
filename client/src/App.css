@@ -37,7 +37,7 @@
   justify-content: center;
   align-items: center;
   /* padding-top: 20px; */
-  padding-right: 20px;
+  /* padding-right: 20px; */
   text-align: center;
   /* position: relative;
   top: 50%;
@@ -95,7 +95,7 @@
 .header {
   font-family: "Linotype Cutter";
   color: #5C9EA0;
-  font-size: 7vmin;
+  font-size: 9vmin;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -128,7 +128,7 @@
 }
 
 .platform-logo {
-  height: 60px;
+  width: 200px;
   display: flex;
   margin: 0 auto;
   margin-bottom: 5px;
