@@ -24,7 +24,12 @@ import Spotify from '../assets/images/spotify-icon.png'
 import Tiktok from '../assets/images/tiktok-icon.png'
 
 const drawerWidth = 240
-const navItems = ['About', 'Shows', 'Releases', 'Gallery', 'Contact']
+const navItems = ['Releases']
+
+// 'About', 'Shows', 
+// , 'Gallery', 'Contact'
+
+
 
 function Nav (props) {
   const { window } = props

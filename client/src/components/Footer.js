@@ -10,7 +10,7 @@ import Tiktok from "../assets/images/tiktok-icon.png"
 export default function Footer () {
   return (
     <div className='footer'>
-      <Grid container spacing={2}>
+      <Grid container spacing={4}>
         <Grid item xs={6} sm={6} sx={{display: "flex", justifyContent: "center", alignItems: "center", color: "black"}}>
           <img src={Logo} className="pesky-logo" alt="Pesky Kidd logo" />
         </Grid>
