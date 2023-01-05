@@ -30,7 +30,7 @@
 }
 
 .pesky-logo {
-  height: 100px;
+  height: 80px;
   justify-content: center;
   align-items: center;
   /* padding-top: 20px; */
@@ -49,7 +49,7 @@
 }
 
 .pesky-drawer {
-  height: 100px;
+  height: 80px;
   display: block;
   margin: 0 auto;
 }
