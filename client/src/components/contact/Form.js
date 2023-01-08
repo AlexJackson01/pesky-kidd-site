@@ -11,17 +11,11 @@ import { alpha, styled } from '@mui/material/styles'
 // init('CRSB7HDdL0UfMj8EF')
 
 const ContactText = styled(TextField)({
-    color: "FCFBF6",
-    '& .MuiInputBase-root': {
-        color: '#FCFBF6',
-      },
-
-  '& label.Mui-focused': {
-    color: '#FCFBF6'
-  },
-  '& .MuiInput-underline:after': {
-    borderBottomColor: '#FCFBF6'
-  }
+  color: "#FCFBF6",
+    "& .MuiInputLabel-root": { color: "#FCFBF6" },
+    // border: "1px solid #5C9EA0",
+    '& .MuiInput-underline:before': { color: '#FCFBF6', borderBottomColor: '#FCFBF6' },
+    '& .MuiInput-underline:after': { color: '#FCFBF6', borderBottomColor: '#FCFBF6' },
 })
 
 export default function Form () {
@@ -51,7 +45,7 @@ export default function Form () {
 
   return (
     <div>
-        <h2 className='contact-header'>For general and booking enquiries, contact us here:</h2>
+        <h3 className='contact-header'>For general and booking enquiries, contact us here:</h3>
         {/* onSubmit={sendEmail} */}
       <form ref={form} >
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
@@ -66,6 +60,7 @@ export default function Form () {
           >
             <AccountCircle sx={{ color: '#FCFBF6', mr: 1, my: 0.5 }} />
             <ContactText
+            id="input-with-sx"
               label='Name'
               name='user_name'
               variant='standard'
@@ -116,7 +111,6 @@ export default function Form () {
             size='large'
             sx={{
               textTransform: 'none',
-              fontSize: 20,
               fontFamily: 'NexaSlab',
               textAlign: 'center',
               margin: '0 auto',

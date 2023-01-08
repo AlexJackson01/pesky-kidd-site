@@ -12,9 +12,8 @@ export default function ContactPage() {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          backgroundColor: '#444E5A',
-          padding: "50px",
-          opacity: "75%"
+          backgroundColor: 'rgba(68, 78, 90, 0.7)',
+          padding: 5
         }}>
         <Grid item sm={12} xs={12} md={6}>
           <Form />
