@@ -175,6 +175,10 @@ h2 {
   flex-wrap: wrap;
 }
 
+.band-instruments {
+  padding-bottom: 20px;
+}
+
 .track-name {
   font-family: 'Linotype Cutter';
   /* font-size: 80%; */

@@ -24,7 +24,7 @@ export default function Band () {
   <div>
     <img src={member.img} className='member-pic' />
     <h4>{member.name}</h4>
-    <h5>{member.instrument}</h5>
+    <h5 className='band-instruments'>{member.instrument}</h5>
   </div>
 ))}
 
