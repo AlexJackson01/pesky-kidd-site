@@ -11,6 +11,7 @@ import MailingList from './MailingList'
 export default function Footer () {
   return (
     <div className='footer'>
+      <footer>
       <Grid container spacing={4}>
         <Grid item xs={12} sm={6} md={4} sx={{display: "flex", justifyContent: "center", alignItems: "center", color: "black"}}>
           <img src={Logo} className="pesky-logo" alt="Pesky Kidd logo" />
@@ -45,6 +46,7 @@ export default function Footer () {
             </IconButton>
         </Grid>
       </Grid>
+      </footer>
     </div>
   )
 }

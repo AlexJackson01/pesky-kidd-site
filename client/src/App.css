@@ -32,6 +32,8 @@
                             'embedded-opentype', and 'svg' */
 }
 
+html, body { height: 100% }
+
 .app-body {
   background-image: url(./assets/images/background.png);
   background-size: cover;
