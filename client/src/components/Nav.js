@@ -151,7 +151,9 @@ function Nav (props) {
               <NavLink to='/'>
                 <img src={Logo} className='pesky-logo' alt='Pesky Kidd logo' />
               </NavLink>
+              <NavLink to="/" style={{color: "black", paddingLeft: 10}}>
               <h1 className='nav-heading'>Pesky Kidd</h1>
+              </NavLink>
             </Box>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
