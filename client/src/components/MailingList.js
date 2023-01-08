@@ -40,7 +40,7 @@ export default function MailingList() {
     // border: "1px solid #5C9EA0",
 
     fontFamily: "Courier Prime",
-    width: 350,
+    width: "100%",
     '&.MuiInput': { color: "#5C9EA0"},
 
 
