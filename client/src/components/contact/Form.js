@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
-// import emailjs from '@emailjs/browser'
-// import { init } from '@emailjs/browser'
+import emailjs from '@emailjs/browser'
+import { init } from '@emailjs/browser'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import TextField from '@mui/material/TextField'
@@ -8,14 +8,17 @@ import AccountCircle from '@mui/icons-material/AccountCircle'
 import EmailIcon from '@mui/icons-material/Email'
 import { alpha, styled } from '@mui/material/styles'
 
-// init('CRSB7HDdL0UfMj8EF')
+init('CRSB7HDdL0UfMj8EF')
 
 const ContactText = styled(TextField)({
   color: "#FCFBF6",
     "& .MuiInputLabel-root": { color: "#FCFBF6" },
+    "& .MuiInputBase-root": { color: "#FCFBF6" },
     // border: "1px solid #5C9EA0",
+    '&.MuiInput': { color: "#FCFBF6"},
     '& .MuiInput-underline:before': { color: '#FCFBF6', borderBottomColor: '#FCFBF6' },
     '& .MuiInput-underline:after': { color: '#FCFBF6', borderBottomColor: '#FCFBF6' },
+    input: { color: '#FCFBF6' }
 })
 
 export default function Form () {
@@ -23,31 +26,30 @@ export default function Form () {
 
   const form = useRef()
 
-//   const sendEmail = e => {
-//     e.preventDefault()
+  const sendEmail = e => {
+    e.preventDefault()
 
-//     emailjs
-//       .sendForm(
-//         'service_fsboimm',
-//         'template_mvkp547',
-//         form.current,
-//         'CRSB7HDdL0UfMj8EF'
-//       )
-//       .then(
-//         result => {
-//           setEmailSent(<p>Message sent!</p>)
-//         },
-//         error => {
-//           console.log(error.text)
-//         }
-//       )
-//   }
+    emailjs
+      .sendForm(
+        'service_fsboimm',
+        'template_dkc4nxi',
+        form.current,
+        'CRSB7HDdL0UfMj8EF'
+      )
+      .then(
+        result => {
+          setEmailSent(<p>Message sent!</p>)
+        },
+        error => {
+          console.log(error.text)
+        }
+      )
+  }
 
   return (
     <div>
         <h3 className='contact-header'>For general and booking enquiries, contact us here:</h3>
-        {/* onSubmit={sendEmail} */}
-      <form ref={form} >
+      <form ref={form} onSubmit={sendEmail}>
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
           <Box
             sx={{
@@ -96,12 +98,13 @@ export default function Form () {
           autoComplete='off'
         >
           <ContactText
-            id='standard-multiline-static'
+            multiline
+            id="input-with-sx"
             label='Message'
             name='user_message'
-            multiline
             rows={4}
             variant='standard'
+            sx={{color: "white"}}
           />
         </Box>
         <p>
@@ -126,7 +129,7 @@ export default function Form () {
           </Button>
         </p>
       </form>
-      {emailSent}
+      <p className='sent-message'>{emailSent}</p>
     </div>
   )
 }

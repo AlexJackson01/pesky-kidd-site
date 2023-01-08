@@ -52,10 +52,10 @@ function Nav (props) {
         <NavLink to='/'>
           <img src={WhiteLogo} className='pesky-drawer' alt='Pesky Kidd logo' />
         </NavLink>
-        <h1 className='nav-heading'>Pesky Kidd</h1>
+        <h1 className='drawer-heading'>Pesky Kidd</h1>
       </Typography>
       <Divider />
-      <List>
+      <List sx={{marginBottom: 5}}>
         {navItems.map(item => (
           <ListItem
             key={item}
@@ -82,18 +82,19 @@ function Nav (props) {
           href='https://www.instagram.com/peskykiddofficial/'
           target='_blank'
         >
-          <InstagramIcon fontSize='large' sx={{ color: 'black' }} />
+          <InstagramIcon fontSize='large' sx={{ color: 'black', marginTop: 2 }} />
         </IconButton>
         <IconButton href='https://www.facebook.com/peskyk1dd/' target='_blank'>
-          <FacebookIcon fontSize='large' sx={{ color: 'black' }} />
+          <FacebookIcon fontSize='large' sx={{ color: 'black', marginTop: 2 }} />
         </IconButton>
         <IconButton
           href='https://open.spotify.com/artist/6GU3Fg2x5wvm0PIHryh3Sf?si=gHjTIqBEShysv1trhsfKFg'
           target='_blank'
+          sx={{marginTop: 2}}
         >
           <img src={Spotify} className='social-icons' alt='Spotify icon' />
         </IconButton>
-        <IconButton href='https://www.tiktok.com/@peskykidd' target='_blank'>
+        <IconButton href='https://www.tiktok.com/@peskykidd' target='_blank' sx={{marginTop: 2}}>
           <img src={Tiktok} className='social-icons' alt='Spotify icon' />
         </IconButton>
       </List>
@@ -111,7 +112,7 @@ function Nav (props) {
           position: 'sticky',
           backgroundColor: '#FCFBF6',
           color: 'black',
-          height: 180,
+          height: 140,
           justifyContent: 'center'
         }}
       >
@@ -166,7 +167,7 @@ function Nav (props) {
                     textTransform: 'none',
                     color: 'black',
                     fontFamily: 'Courier Prime',
-                    fontSize: 22,
+                    fontSize: 25,
                     fontWeight: "bold"
                   }}
                 >
@@ -174,6 +175,7 @@ function Nav (props) {
                 </NavLink>
               </Button>
             ))}
+            <Box sx={{display: "flex", justifyContent: "flex-end", alignItems: "flex-end"}}>
             <IconButton
               href='https://www.instagram.com/peskykiddofficial/'
               target='_blank'
@@ -198,6 +200,7 @@ function Nav (props) {
             >
               <img src={Tiktok} className='social-icons' alt='Spotify icon' />
             </IconButton>
+            </Box>
           </Box>
         </Toolbar>
       </AppBar>

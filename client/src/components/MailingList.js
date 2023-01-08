@@ -77,22 +77,21 @@ export default function MailingList() {
         <h2>Join our mailing list:</h2>
 <TextField
   sx={{
-
+    color: "#5C9EA0",
     "& .MuiInputLabel-root": { color: "#5C9EA0" },
     // border: "1px solid #5C9EA0",
-    borderRadius: 1,
-    color: "green",
-    fontFamily: "Courier Prime",
-    width: 400,
+    '&.MuiInput': { color: "#5C9EA0"},
     '& .MuiInput-underline:before': { color: '#5C9EA0', borderBottomColor: '#5C9EA0' },
     '& .MuiInput-underline:after': { color: '#5C9EA0', borderBottomColor: '#5C9EA0' },
-    "& .MuiOutlinedInput-root.Mui-focused": {
-        "& > fieldset": {   
-  borderColor: "orange"
-        }
-      }
-      
+    input: { color: '#5C9EA0' },
+
+    // border: "1px solid #5C9EA0",
+
+    fontFamily: "Courier Prime",
+    width: 350,
+ 
   }}
+  
   label="Email address"
   variant="standard"
   name="email"
