@@ -20,7 +20,7 @@ export default function AboutPage () {
         }}
       >
         <Grid item sm={12}>
-          <Blurb />{' '}
+          <Blurb />
         </Grid>
         <Grid item sm={12}>
         <h1 className='band-title'>The Band</h1>

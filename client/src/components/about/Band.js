@@ -27,18 +27,6 @@ export default function Band () {
     <h5 className='band-instruments'>{member.instrument}</h5>
   </div>
 ))}
-
-          {/* {band.map((member) => (
-            <div>
-         <div class='grid-item'><img src={member.img} className="member-pic"/></div>
-         <div class='grid-item'><h4>{member.name}</h4></div>
-         <div class='grid-item'>
-          {member.instrument.map((instrument) => (
-            <h5>{instrument}</h5>
-          ))}
-         </div>
-         </div>
-          ))} */}
  
 
     </div>
