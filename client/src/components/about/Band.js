@@ -7,11 +7,11 @@ import { Grid } from '@mui/material'
 
 export default function Band () {
   const [band, setBand] = useState([
-    { name: 'Ben Forsythe', instrument: 'Vocals, rhythm guitar', img: Ben },
+    { name: 'Ben Forsythe', instrument: 'Vocals, Rhythm Guitar', img: Ben },
     { name: 'Luca Chessa', instrument: 'Lead Guitar', img: Luca },
     {
       name: 'Lee Godkin',
-      instrument: 'Keyboard, backing vocals',
+      instrument: 'Keyboard, Backing Vocals',
       img: Lee
     },
     // { name: 'Andy Harrison', instrument: ['Bass'], img: '' },
