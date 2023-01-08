@@ -21,6 +21,8 @@ export default function AboutPage () {
           <Blurb />{' '}
         </Grid>
         <Grid item sm={12}>
+        <h1 className='band-title'>The Band</h1>
+
           <Band />
         </Grid>
       </Grid>

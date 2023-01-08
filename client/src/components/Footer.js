@@ -6,15 +6,19 @@ import FacebookIcon from '@mui/icons-material/Facebook'
 import Logo from "../assets/images/logo-no-bg.png"
 import Spotify from "../assets/images/spotify-icon.png"
 import Tiktok from "../assets/images/tiktok-icon.png"
+import MailingList from './MailingList'
 
 export default function Footer () {
   return (
     <div className='footer'>
       <Grid container spacing={4}>
-        <Grid item xs={12} sm={6} md={6} sx={{display: "flex", justifyContent: "center", alignItems: "center", color: "black"}}>
+        <Grid item xs={12} sm={6} md={4} sx={{display: "flex", justifyContent: "center", alignItems: "center", color: "black"}}>
           <img src={Logo} className="pesky-logo" alt="Pesky Kidd logo" />
         </Grid>
-        <Grid item xs={12} sm={6} md={6} sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+        <Grid item xs={12} sm={6} md={4} sx={{display: "flex", justifyContent: "center", alignItems: "center", color: "black"}}>
+          <MailingList />
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
           <IconButton
             href='https://www.instagram.com/peskykiddofficial/'
             target='_blank'

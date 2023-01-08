@@ -7,21 +7,28 @@ import { Grid } from '@mui/material'
 
 export default function Band () {
   const [band, setBand] = useState([
-    { name: 'Ben Forsythe', instrument: ['Vocals', 'Rhythm Guitar'], img: Ben },
-    { name: 'Luca Chessa', instrument: ['Lead Guitar'], img: Luca },
+    { name: 'Ben Forsythe', instrument: 'Vocals, rhythm guitar', img: Ben },
+    { name: 'Luca Chessa', instrument: 'Lead Guitar', img: Luca },
     {
       name: 'Lee Godkin',
-      instrument: ['Keyboard', 'Backing vocals'],
+      instrument: 'Keyboard, backing vocals',
       img: Lee
     },
     // { name: 'Andy Harrison', instrument: ['Bass'], img: '' },
-    { name: 'Johnnie Shinner', instrument: ['Drums'], img: Johnnie }
+    { name: 'Johnnie Shinner', instrument: 'Drums', img: Johnnie }
   ])
 
   return (
     <div className='band-div'>
-        <div class='grid-container'>
-          {band.map((member) => (
+{band.map((member) => (
+  <div>
+    <img src={member.img} className='member-pic' />
+    <h4>{member.name}</h4>
+    <h5>{member.instrument}</h5>
+  </div>
+))}
+
+          {/* {band.map((member) => (
             <div>
          <div class='grid-item'><img src={member.img} className="member-pic"/></div>
          <div class='grid-item'><h4>{member.name}</h4></div>
@@ -31,9 +38,9 @@ export default function Band () {
           ))}
          </div>
          </div>
-          ))}
+          ))} */}
  
-        </div>
+
     </div>
   )
 }
