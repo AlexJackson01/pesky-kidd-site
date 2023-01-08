@@ -35,7 +35,7 @@ export default function MailingList() {
     '&.MuiInput': { color: "#5C9EA0"},
     '& .MuiInput-underline:before': { color: '#5C9EA0', borderBottomColor: '#5C9EA0' },
     '& .MuiInput-underline:after': { color: '#5C9EA0', borderBottomColor: '#5C9EA0' },
-    input: { color: '#5C9EA0' },
+    input: { color: 'black' },
 
     // border: "1px solid #5C9EA0",
 
