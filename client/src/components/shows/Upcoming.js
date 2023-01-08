@@ -44,7 +44,6 @@ const rows = [
 export default function Upcoming() {
   return (
     <div>
-                <h1 className='header'>Upcoming Shows</h1>
 
     <TableContainer sx={{ display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center"}}>
       <Table sx={{ maxWidth: 900, backgroundColor: "transparent" }} aria-label="simple table">

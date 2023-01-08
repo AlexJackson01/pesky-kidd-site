@@ -2,11 +2,13 @@ import React from 'react'
 import SpotifyPlayer from '../components/releases/Spotify'
 import Releases from '../components/releases/Releases'
 import { Grid } from '@mui/material'
+import { Fade } from 'react-reveal'
 
 export default function MusicPage ({ setRecord, record }) {
   return (
     <div className='app-body container'>
       <h1 className='header'>Releases</h1>
+      <Fade bottom>
       <Grid container spacing={8}>
         <Grid
           item
@@ -22,6 +24,7 @@ export default function MusicPage ({ setRecord, record }) {
           <Releases record={record} />
         </Grid>
       </Grid>
+      </Fade>
     </div>
   )
 }

@@ -2,10 +2,14 @@ import React from 'react'
 import Upcoming from "../components/shows/Upcoming"
 import Recent from '../components/shows/Recent'
 import { Grid } from '@mui/material'
+import { Fade } from 'react-reveal'
 
 export default function ShowsPage () {
   return (
     <div className='app-body container'>
+                      <h1 className='header'>Upcoming Shows</h1>
+
+      <Fade bottom>
       <Grid container spacing={0}>
         <Grid item xs={12} sm={12} md={12} sx={{paddingBottom: 10, display: "flex", justifyContent: "center", alignItems: "center"}}>
           <Upcoming />
@@ -15,6 +19,7 @@ export default function ShowsPage () {
           <Recent />
         </Grid> */}
       </Grid>
+      </Fade>
     </div>
   )
 }
