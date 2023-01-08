@@ -14,11 +14,11 @@ function createData(date, location, tickets) {
 }
 
 const TabHeader = styled(TableCell)(({ theme }) => ({
-    color: "white", fontFamily: "Courier Prime", fontSize: 25, fontWeight: "bold"
+    color: "white", fontFamily: "Courier Prime", fontWeight: "bold"
   }))
 
   const TabData = styled(TableCell)(({ theme }) => ({
-    color: "white", fontFamily: "Courier Prime", fontSize: 20
+    color: "white", fontFamily: "Courier Prime", 
   }))
 
   const TicketButton = styled(Button)(({ theme }) => ({
@@ -28,8 +28,7 @@ const TabHeader = styled(TableCell)(({ theme }) => ({
     color: 'white',
     fontFamily: "Courier Prime",
     // padding: '10px 20px 10px 20px',
-    fontSize: 20,
-    width: 180,
+    // width: 180,
     '&:hover': {
       backgroundColor: '#444E5A',
       color: "white"
@@ -37,13 +36,16 @@ const TabHeader = styled(TableCell)(({ theme }) => ({
   }))
 
 const rows = [
-  createData('Sat 4 February 2023', 'Pulled Apart By Horses, O2 Academy Islington', "https://www.seetickets.com/event/inpop-presents-pulled-apart-by-horses/o2-academy-islington/2488594?src=peskykidd"),
+  createData('Sat 4 February 2023', 'O2 Academy Islington w/ Pulled Apart By Horses', "https://www.seetickets.com/event/inpop-presents-pulled-apart-by-horses/o2-academy-islington/2488594?src=peskykidd"),
   createData('Sat 25 February 2023', 'Camden Assembly, London', ""),
   createData('Sat 18 March 2023', 'Fiddlers Elbow, London', ""),
 ];
 
 export default function Upcoming() {
   return (
+    <div>
+                <h1 className='header'>Upcoming Shows</h1>
+
     <TableContainer sx={{ display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center"}}>
       <Table sx={{ maxWidth: 900, backgroundColor: "transparent" }} aria-label="simple table">
         <TableHead>
@@ -69,5 +71,6 @@ export default function Upcoming() {
         </TableBody>
       </Table>
     </TableContainer>
+    </div>
   );
 }
