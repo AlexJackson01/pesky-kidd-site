@@ -8,68 +8,20 @@ import axios from 'axios';
 export default function MailingList() {
 
     const [email, setEmail] = useState(null);
+    const [confirmation, setConfirmation] = useState("")
 
-    const sheetID = "10Vuuj1JFVpUDTUb4_HOErhOXjHdr5xYrRsyGvFWGLVM";
-
-    const accessToken = "ya29.a0AX9GBdV8egTGe9e8qhM5o2SJdBr9FjIZ0CEvAFsuMAqvIUWx2RJzmxTF0WuBkXdzMkQKePur_olZmsOM6Vw_vYiNuZYjQsZzNf1O1hGHVycb8tbVHuPIZeP5AqH-6X3au3facdNpnSuRZEbjUyWWqAwe7s-laCgYKATYSARESFQHUCsbCLb9oqNXR3XB8eeTocz3HlA0163"
 
     const addToList = (e) => {
+        // e.preventDefault()
+        axios.post(`https://sheet.best/api/sheets/f7199bee-4e6c-4263-9275-5e48ef699d68`, {
+            email
+        })
+        .then(response => {
+          console.log(response);
+          setConfirmation("Thank you!")
+        })
 
-        fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetID}:batchUpdate`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        //update this token with yours. 
-        Authorization: `Bearer ${accessToken}`,
-      },
-      body: JSON.stringify({
 
-        "requests": [
-          {
-            "updateCells": {
-              "range": {
-                "startRowIndex": 0,
-                "startColumnIndex": 0,
-                "endColumnIndex": 1,
-                "endRowIndex": 3,
-                "sheetId": 0
-              },
-              " ": [
-                {
-                  "values": [
-                    {
-                      "userEnteredValue": {
-                        "stringValue": "Adnan1"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "values": [
-                    {
-                      "userEnteredValue": {
-                        "stringValue": "Adnan2"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "values": [
-                    {
-                      "userEnteredValue": {
-                        "stringValue": "Adnan3"
-                      }
-                    }
-                  ]
-                }
-              ],
-              "fields": "*"
-            }
-          }
-        ]
-
-      })
-    })
   }
 
   return (
@@ -89,9 +41,11 @@ export default function MailingList() {
 
     fontFamily: "Courier Prime",
     width: 350,
- 
+    '&.MuiInput': { color: "#5C9EA0"},
+
+
+      
   }}
-  
   label="Email address"
   variant="standard"
   name="email"
@@ -121,6 +75,8 @@ export default function MailingList() {
           >
             Submit
           </Button>
+          <p className='confirmation-message'>{confirmation}</p>
+
     </div>
   )
 }

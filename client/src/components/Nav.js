@@ -167,7 +167,7 @@ function Nav (props) {
                     textTransform: 'none',
                     color: 'black',
                     fontFamily: 'Courier Prime',
-                    fontSize: 25,
+                    fontSize: 22,
                     fontWeight: "bold"
                   }}
                 >
