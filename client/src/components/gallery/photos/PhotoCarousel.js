@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button, Modal, Box, Typography } from '@mui/material'
-import WarringtonCover from "../../assets/images/warrington/14.jpg"
-import AbbeyCover from "../../assets/images/abbey/1.jpg"
-import { Warrington } from './photos/Warrington'
-import { Abbey } from './photos/Abbey'
+import WarringtonCover from "../../../assets/images/warrington/14.jpg"
+import AbbeyCover from "../../../assets/images/abbey/1.jpg"
+import { Warrington } from './Warrington'
+import { Abbey } from './Abbey'
 
 export default function PhotoCarousel() {
 
@@ -18,10 +18,10 @@ export default function PhotoCarousel() {
             name: 'The Warrington Hotel, London, October 2022',
             coverImg: WarringtonCover
           },
-        {
-          name: 'Abbey Road Studios, London, November 2022',
-          coverImg: AbbeyCover
-        }
+        // {
+        //   name: 'Abbey Road Studios, London, November 2022',
+        //   coverImg: AbbeyCover
+        // }
       ]
 
       const style = {
@@ -31,7 +31,7 @@ export default function PhotoCarousel() {
         left: '50%',
         transform: 'translate(-50%, -50%)',
         bgcolor: 'background.paper',
-        border: '2px solid #000',
+        border: 'none',
         boxShadow: 24,
         p: 4
       }
@@ -39,7 +39,7 @@ export default function PhotoCarousel() {
       function AlbumsItem({ item })
       {
           return (
-              <Paper elevation={8} sx={{textAlign: "center", paddingBottom: 1, backgroundColor: 'rgba(68, 78, 90, 0.6)',
+              <Paper sx={{textAlign: "center", background: "transparent"
             }}>
                   <img src={item.coverImg} className="carousel-cover" />
                   <h3 className='carousel-title'>{item.name}</h3>
@@ -83,8 +83,6 @@ export default function PhotoCarousel() {
 
         if (item.name === 'The Warrington Hotel, London, October 2022') {
             setPhotos(Warrington)
-          } else {
-            setPhotos(Abbey)
           }
 
         setOpen(true)
@@ -94,7 +92,7 @@ export default function PhotoCarousel() {
 
     return (
         <div>
-        <Carousel indicators={true}>
+        <Carousel indicators={false}>
             {
                 photoAlbums.map( (album, i) => <AlbumsItem key={i} item={album} /> )
             }
