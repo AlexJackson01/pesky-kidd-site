@@ -16,7 +16,7 @@ export default function VideoCarousel() {
 
     let videoAlbums = [
         {
-            name: 'The O2 Academy2 Islington, London, December 2022',
+            name: 'The O2 Academy Islington, London, December 2022',
             coverImg: O2Cover
           },
         // {
@@ -86,7 +86,7 @@ export default function VideoCarousel() {
       const openAlbum = (item) => {
         setSelectedAlbum(item.name)
 
-        if (item.name === 'The O2 Academy2 Islington, London, December 2022') {
+        if (item.name === 'The O2 Academy Islington, London, December 2022') {
             setPhotos(O2)
           }
 
