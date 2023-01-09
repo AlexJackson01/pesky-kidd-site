@@ -16,7 +16,7 @@ export default function VideoCarousel() {
 
     let videoAlbums = [
         {
-            name: 'The O2 Academy 2 Islington, London, December 2022',
+            name: 'The O2 Academy2 Islington, London, December 2022',
             coverImg: O2Cover
           },
         // {
