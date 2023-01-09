@@ -4,8 +4,6 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Modal, { getModalUtilityClass } from '@mui/material/Modal'
 import {o2} from './o2'
-import { abbey } from "./abbey"
-import { warrington } from "../WarCarousel"
 import Carousel from 'react-material-ui-carousel'
 import O2Cover from '../../../assets/images/O2Cover.png'
 import { Grid } from '@mui/material';

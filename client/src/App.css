@@ -345,6 +345,17 @@ h5 {
   margin: 0 auto;
 }
 
+.carousel-cover {
+  height: 300px;
+  padding-top: 30px;
+  /* margin-left: -100px; */
+  /* width: 300px; */
+}
+
+.carousel-title {
+  color:#fcfbf6;
+}
+
 .carousel-image {
   height: 500px;
   display: block;

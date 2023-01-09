@@ -4,7 +4,7 @@ import Pic4 from '../../../assets/images/abbey/4.jpg'
 import Pic5 from '../../../assets/images/abbey/5.jpg'
 
 
-export const abbey = [
+export const Abbey = [
   {
     name: 'Photo1',
     image: Pic1
