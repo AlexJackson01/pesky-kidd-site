@@ -195,7 +195,7 @@ h3 {
 }
 
 .band-instruments {
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .track-name {
@@ -266,6 +266,7 @@ a {
 .band-blurb {
   font-family: 'Courier Prime';
   color: white;
+  padding-bottom: 20px;
   /* font-size: 1.6vh; */
 }
 
