@@ -352,8 +352,21 @@ h5 {
   /* width: 300px; */
 }
 
+.carousel-item {
+  width: 100%;
+  /* height: 300px; */
+  display: block;
+  margin: 0 auto;
+}
+
 .carousel-title {
   color:#fcfbf6;
+}
+
+.photo-title {
+  font-family: "Courier Prime";
+  text-align: center;
+  font-size: 2vh;
 }
 
 .carousel-image {

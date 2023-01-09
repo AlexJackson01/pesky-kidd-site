@@ -8,7 +8,6 @@ import Pic7 from '../../../assets/images/warrington/11.jpg'
 import Pic8 from '../../../assets/images/warrington/13.jpg'
 import Pic9 from '../../../assets/images/warrington/14.jpg'
 import Pic10 from '../../../assets/images/warrington/16.jpg'
-import Pic11 from '../../../assets/images/warrington/17.jpg'
 
 
 export const Warrington = [
@@ -51,9 +50,5 @@ export const Warrington = [
   {
     name: 'Photo2',
     image: Pic10
-  },
-  {
-    name: 'Photo2',
-    image: Pic11
   }
 ]
