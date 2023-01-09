@@ -26,7 +26,7 @@ export default function MailingList() {
 
   return (
     <div>
-        <h2>Join our mailing list:</h2>
+        <h3>Join our mailing list:</h3>
 <TextField
   sx={{
     color: "#5C9EA0",

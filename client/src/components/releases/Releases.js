@@ -87,7 +87,8 @@ export default function Releases ({ setRecord }) {
   const style = {
     modalStyle: {
       backgroundImage: `url(${selectedCover})`,
-      backgroundSize: '100%',
+      backgroundSize: '100vw',
+      backgroundRepeat: "repeat",
       filter: 'blur',
       border: '2px solid #fff'
     },

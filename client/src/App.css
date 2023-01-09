@@ -36,8 +36,25 @@ html, body { height: 100% }
 
 .app-body {
   background-image: url(./assets/images/background.png);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   background-size: cover;
+  /* background-repeat: no-repeat; */
   /* height: 100vh; */
+}
+
+@media screen and (max-width: 800px) {
+  .app-body {
+    background-image: url(./assets/images/bg-high.png);
+    background-size: cover;
+
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .bgImage {
+    background-image: url(./assets/images/background.png);
+    background-size: cover;
+  }
 }
 
 .container {
@@ -80,7 +97,7 @@ html, body { height: 100% }
   font-size: 35px;
 }
 
-h2 {
+h3 {
   font-family: 'Courier Prime';
   text-align: center;
 }
@@ -187,7 +204,7 @@ h2 {
 }
 
 .track-cover {
-  width: 60%;
+  width: 150px;
   padding-top: 30px;
 }
 
@@ -268,7 +285,7 @@ a {
   flex-wrap: wrap;
   align-items: center;
   /* margin-top: 30px; */
-  background-color: rgba(68, 78, 90, 0.7);
+  background-color: rgba(68, 78, 90, 0.6);
   padding: 50px;
   /* margin-bottom: 50px; */
 }
