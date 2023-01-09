@@ -2,10 +2,11 @@ import React, {useState} from 'react'
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button, Modal, Box, Typography } from '@mui/material'
 import O2Cover from '../../../assets/images/O2Cover.png'
-import AbbeyCover from "../../../assets/images/abbey/1.jpg"
+import AbbeyCover from "../../../assets/images/abbey.png"
 import { O2 } from './O2'
-import { Abbey } from '../photos/Abbey'
-import YouTubeEmbed from './YouTubeEmbed'
+import { Abbey } from "../videos/Abbey"
+import YouTubeO2 from './YouTubeO2'
+import YouTubeAbbey from './YouTubeAbbey'
 
 export default function VideoCarousel() {
 
@@ -19,10 +20,10 @@ export default function VideoCarousel() {
             name: 'The O2 Academy Islington, London, December 2022',
             coverImg: O2Cover
           },
-        // {
-        //   name: 'Abbey Road Studios, London, November 2022',
-        //   coverImg: AbbeyCover
-        // }
+        {
+          name: 'Abbey Road Studios, London, November 2022',
+          coverImg: AbbeyCover
+        }
       ]
 
       const style = {
@@ -76,7 +77,9 @@ export default function VideoCarousel() {
           return (
             <div style={{ width: "100%", height: "100%" }}>
             <div className="App">
-              <YouTubeEmbed embedId={item.id} />
+              {selectedAlbum === "The O2 Academy Islington, London, December 2022" ?
+              (<YouTubeO2 embedId={item.id} />)
+            : <YouTubeAbbey embedId={item.id} />}
             </div>
                 </div>
 
@@ -88,6 +91,8 @@ export default function VideoCarousel() {
 
         if (item.name === 'The O2 Academy Islington, London, December 2022') {
             setPhotos(O2)
+          } else {
+            setPhotos(Abbey)
           }
 
         setOpen(true)

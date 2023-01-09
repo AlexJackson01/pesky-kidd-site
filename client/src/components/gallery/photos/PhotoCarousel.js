@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button, Modal, Box, Typography } from '@mui/material'
 import WarringtonCover from "../../../assets/images/warrington/14.jpg"
-import AbbeyCover from "../../../assets/images/abbey/1.jpg"
+import AbbeyCover from "../../../assets/images/abbey/4.png"
 import { Warrington } from './Warrington'
 import { Abbey } from './Abbey'
 
@@ -18,10 +18,10 @@ export default function PhotoCarousel() {
             name: 'The Warrington Hotel, London, October 2022',
             coverImg: WarringtonCover
           },
-        // {
-        //   name: 'Abbey Road Studios, London, November 2022',
-        //   coverImg: AbbeyCover
-        // }
+        {
+          name: 'Abbey Road Studios, London, November 2022',
+          coverImg: AbbeyCover
+        }
       ]
 
       const style = {
@@ -83,6 +83,8 @@ export default function PhotoCarousel() {
 
         if (item.name === 'The Warrington Hotel, London, October 2022') {
             setPhotos(Warrington)
+          } else {
+            setPhotos(Abbey)
           }
 
         setOpen(true)
