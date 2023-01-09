@@ -86,7 +86,7 @@ export default function VideoCarousel() {
       const openAlbum = (item) => {
         setSelectedAlbum(item.name)
 
-        if (item.name === 'The O2 Academy 2 Islington, London, December 2022') {
+        if (item.name === 'The O2 Academy2 Islington, London, December 2022') {
             setPhotos(O2)
           }
 
