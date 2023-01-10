@@ -102,7 +102,7 @@ export default function VideoCarousel() {
 
     return (
         <div>
-        <Carousel indicators={false}>
+        <Carousel indicators={true}>
             {
                 videoAlbums.map( (album, i) => <AlbumsItem key={i} item={album} /> )
             }

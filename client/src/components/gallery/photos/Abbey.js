@@ -1,7 +1,7 @@
 import Pic1 from '../../../assets/images/abbey/1.png'
 import Pic2 from '../../../assets/images/abbey/2.png'
-import Pic4 from '../../../assets/images/abbey/3.png'
-import Pic5 from '../../../assets/images/abbey/4.png'
+import Pic3 from '../../../assets/images/abbey/3.png'
+import Pic4 from '../../../assets/images/abbey/4.png'
 
 
 export const Abbey = [
@@ -15,10 +15,10 @@ export const Abbey = [
   },
   {
     name: 'Photo2',
-    image: Pic4
+    image: Pic3
   },
   {
     name: 'Photo2',
-    image: Pic5
+    image: Pic4
   },
 ]

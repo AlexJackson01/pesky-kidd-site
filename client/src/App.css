@@ -346,14 +346,16 @@ h5 {
 }
 
 .carousel-cover {
-  height: 300px;
+  height: 250px;
   padding-top: 30px;
+  display: block;
+  margin: 0 auto;
   /* margin-left: -100px; */
   /* width: 300px; */
 }
 
 .carousel-item {
-  width: 300px;
+  height: 45vw;
   /* height: 300px; */
   display: block;
   margin: 0 auto;

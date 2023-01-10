@@ -2,9 +2,11 @@ import React, {useState} from 'react'
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button, Modal, Box, Typography } from '@mui/material'
 import WarringtonCover from "../../../assets/images/warrington/14.jpg"
-import AbbeyCover from "../../../assets/images/abbey/4.png"
+import AbbeyCover from "../../../assets/images/abbey/2.png"
 import { Warrington } from './Warrington'
 import { Abbey } from './Abbey'
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 export default function PhotoCarousel() {
 
@@ -31,7 +33,7 @@ export default function PhotoCarousel() {
         left: '50%',
         transform: 'translate(-50%, -50%)',
         bgcolor: 'background.paper',
-        border: 'none',
+        border: '2px solid #000',
         boxShadow: 24,
         p: 4
       }
@@ -94,7 +96,7 @@ export default function PhotoCarousel() {
 
     return (
         <div>
-        <Carousel indicators={false}>
+        <Carousel indicators={true}>
             {
                 photoAlbums.map( (album, i) => <AlbumsItem key={i} item={album} /> )
             }
