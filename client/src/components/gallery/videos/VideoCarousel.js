@@ -3,8 +3,8 @@ import Carousel from 'react-material-ui-carousel'
 import { Paper, Button, Modal, Box, Typography } from '@mui/material'
 import O2Cover from '../../../assets/images/O2Cover.png'
 import AbbeyCover from "../../../assets/images/abbey.png"
-import { O2 } from './O2'
-import { Abbey } from "../videos/Abbey"
+import { O2 } from "./O2"
+import { Abbey } from "./Abbey"
 import YouTubeO2 from './YouTubeO2'
 import YouTubeAbbey from './YouTubeAbbey'
 
