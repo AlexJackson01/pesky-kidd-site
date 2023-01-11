@@ -17,10 +17,12 @@ export default function PhotoCarousel() {
 
     let photoAlbums = [
         {
+          id: 1,
             name: 'The Warrington Hotel, London, October 2022',
             coverImg: WarringtonCover
           },
         {
+          id: 2,
           name: 'Abbey Road Studios, London, November 2022',
           coverImg: AbbeyCover
         }
@@ -83,7 +85,7 @@ export default function PhotoCarousel() {
       const openAlbum = (item) => {
         setSelectedAlbum(item.name)
 
-        if (item.name === 'The Warrington Hotel, London, October 2022') {
+        if (item.id === 1) {
             setPhotos(Warrington)
           } else {
             setPhotos(Abbey)

@@ -1,14 +1,14 @@
 export const O2 = [
   {
     name: 'Photo1',
-    id: "L44xI8EDqQo"
+    id: "oA0ZTwbW_rI"
   },
   {
     name: 'Photo2',
-    id: "3t5fu1rxvC0"
+    id: "0AGMR48j7Ic"
   },
   {
     name: 'Photo2',
-    id: "aLmPIW6YSmk"
+    id: "RlqXt-CJyJM"
   }
 ]
