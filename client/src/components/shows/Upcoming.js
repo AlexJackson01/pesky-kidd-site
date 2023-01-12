@@ -37,7 +37,6 @@ const TabHeader = styled(TableCell)(({ theme }) => ({
 
 const rows = [
   createData('Sat 4 February 2023', 'O2 Academy Islington w/ Pulled Apart By Horses', "https://www.seetickets.com/event/inpop-presents-pulled-apart-by-horses/o2-academy-islington/2488594?src=peskykidd"),
-  createData('Sat 25 February 2023', 'Camden Assembly, London', ""),
   createData('Sat 18 March 2023', 'Fiddlers Elbow, London', ""),
 ];
 
