@@ -429,6 +429,11 @@ h5 {
   padding-bottom: 10px;
 }
 
+.subscribe-text {
+  font-family: "Courier Prime";
+  margin-top: -20px;
+}
+
 .footer {
   padding: 80px;
   background-color: #fcfbf6;
