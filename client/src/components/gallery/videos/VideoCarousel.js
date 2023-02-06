@@ -3,6 +3,8 @@ import Carousel from 'react-material-ui-carousel'
 import { Paper, Button, Modal, Box, Typography } from '@mui/material'
 import O2Cover from '../../../assets/images/O2Cover.png'
 import AbbeyCover from "../../../assets/images/abbey.png"
+import O2Cover_2 from '../../../assets/images/O2Cover_2.jpg' 
+import { O2_2 } from "./O2_2"
 import { O2 } from "./O2"
 import { Abbey } from "./Abbey"
 import YouTubeO2 from './YouTubeO2'
@@ -16,16 +18,22 @@ export default function VideoCarousel() {
     const handleClose = () => setOpen(false)
 
     let videoAlbums = [
+      {
+        id: 1,
+        name: 'The O2 Academy Islington, London, February 2023',
+        coverImg: O2Cover_2
+      },
         {
-          id: 1,
+          id: 2,
             name: 'The O2 Academy Islington, London, December 2022',
             coverImg: O2Cover
           },
         {
-          id: 2,
+          id: 3,
           name: 'Abbey Road Studios, London, November 2022',
           coverImg: AbbeyCover
-        }
+        },
+
       ]
 
       const style = {
@@ -92,6 +100,8 @@ export default function VideoCarousel() {
         setSelectedAlbum(item.name)
 
         if (item.id === 1) {
+            setPhotos(O2_2)
+          } else if (item.id === 2) {
             setPhotos(O2)
           } else {
             setPhotos(Abbey)
