@@ -230,9 +230,12 @@ a {
 .shows-subtitle {
   font-family: 'Courier Prime';
   color: #fcfbf6;
-  font-style: italic;
   text-align: center;
   padding-bottom: 10px;
+}
+
+.shows-subtitle:hover {
+  text-decoration: underline;
 }
 
 .recents-video {
