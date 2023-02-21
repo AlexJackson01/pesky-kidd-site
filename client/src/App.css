@@ -222,6 +222,13 @@ h3 {
   /* display: inline; */
 }
 
+.record-covers {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: flex-end; */
+  flex-wrap: wrap;
+}
+
 a {
   color: #fcfbf6;
   text-decoration: none;
@@ -358,7 +365,7 @@ h5 {
 }
 
 .carousel-item {
-  height: 45vw;
+  height: 45vmin;
   /* height: 300px; */
   display: block;
   margin: 0 auto;

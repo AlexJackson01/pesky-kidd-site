@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import CR from '../../assets/images/CR.jpg'
 import OH from '../../assets/images/OH.jpg'
+import WY from '../../assets/images/WY.jpg'
 import Spotify from '../../assets/images/spotify.svg'
 import Youtube from '../../assets/images/Youtube.png'
 import Apple from '../../assets/images/apple.svg'
@@ -15,6 +16,28 @@ import { Grid } from '@mui/material'
 export default function Releases ({ setRecord }) {
   const [trackToListen, setTrackToListen] = useState(null)
   const [records, setRecords] = useState([
+    {
+      name: 'With You',
+      cover: WY,
+      links: [
+        {
+          img: Spotify,
+          link: 'https://open.spotify.com/album/2EI3OlQ6nB1MiMUaGwQnbM?si=sViZ3190SGesKlTl_yZEEA'
+        },
+        {
+          img: Youtube,
+          link: 'https://music.youtube.com/playlist?list=OLAK5uy_kOte7Fsiqz-BoJ5mv242g8TRvbkgo0l54'
+        },
+        {
+          img: Apple,
+          link: 'https://music.apple.com/gb/album/with-you/1673034868?i=1673034880'
+        },
+        {
+          img: Amazon,
+          link: 'https://music.amazon.co.uk/albums/B0BW9N2Y34?marketplaceId=A1F83G8C2ARO7P&musicTerritory=GB&ref=dm_sh_vO5OgHAPLt0LpVFSkiZ39INzd'
+        }
+      ]
+    },
     {
       name: 'Civilian Rebellion',
       cover: CR,
@@ -88,7 +111,7 @@ export default function Releases ({ setRecord }) {
     modalStyle: {
       backgroundImage: `url(${selectedCover})`,
       backgroundSize: '100vw',
-      backgroundRepeat: "repeat",
+      backgroundRepeat: 'repeat',
       filter: 'blur',
       border: '2px solid #fff'
     },
@@ -97,14 +120,14 @@ export default function Releases ({ setRecord }) {
       top: '50%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
-      width: "80%",
+      width: '80%',
       // height: "80%",
       // width: "70vw",
       // height: "90vh",
       // backgroundColor: "rgba(255, 0, 0, 0.5)",
       backgroundImage: `url(${selectedCover})`,
       backgroundSize: '100%',
-      backgroundRepeat: "repeat",
+      backgroundRepeat: 'repeat',
       border: '2px solid #000',
       boxShadow: 24,
       p: 4,
@@ -117,44 +140,49 @@ export default function Releases ({ setRecord }) {
   return (
     <div>
       <div className='music-platforms'>
-        <Grid container spacing={0} sx={{justifyContent: "center", alignItems: "center"}}>
+        <Grid
+          container
+          spacing={0}
+          sx={{ justifyContent: 'center', alignItems: 'center' }}
+        >
           <Grid item xs={12} md={6}>
-            <a href={musicLinks[0].link} target="_blank">
-            <img
-              src={musicLinks[0].img}
-              alt='Music Platforms'
-              className='platform-logo'
-            />
+            <a href={musicLinks[0].link} target='_blank'>
+              <img
+                src={musicLinks[0].img}
+                alt='Music Platforms'
+                className='platform-logo'
+              />
             </a>
-            <a href={musicLinks[2].link} target="_blank">
-            <img
-              src={musicLinks[2].img}
-              alt='Music Platforms'
-              className='platform-logo'
-            />
+            <a href={musicLinks[2].link} target='_blank'>
+              <img
+                src={musicLinks[2].img}
+                alt='Music Platforms'
+                className='platform-logo'
+              />
             </a>
           </Grid>
           <Grid item xs={12} md={6}>
-          <a href={musicLinks[1].link} target="_blank">
-            <img
-              src={musicLinks[1].img}
-              alt='Music Platforms'
-              className='platform-logo'
-            />
+            <a href={musicLinks[1].link} target='_blank'>
+              <img
+                src={musicLinks[1].img}
+                alt='Music Platforms'
+                className='platform-logo'
+              />
             </a>
-            <a href={musicLinks[3].link} target="_blank">
-            <img
-              src={musicLinks[3].img}
-              alt='Music Platforms'
-              className='platform-logo'
-            />
+            <a href={musicLinks[3].link} target='_blank'>
+              <img
+                src={musicLinks[3].img}
+                alt='Music Platforms'
+                className='platform-logo'
+              />
             </a>
           </Grid>
         </Grid>
 
         <Grid container spacing={3}>
           <Grid item xs={12} md={6}>
-          <img
+            
+            <img
               src={records[0].cover}
               className='music-cover'
               alt='Record cover'
@@ -163,13 +191,22 @@ export default function Releases ({ setRecord }) {
             <h2 className='record-name'>{records[0].name}</h2>
           </Grid>
           <Grid item xs={12} md={6}>
-          <img
+            <img
               src={records[1].cover}
               className='music-cover'
               alt='Record cover'
               onClick={() => handleOpen(records[1])}
             />
             <h2 className='record-name'>{records[1].name}</h2>
+          </Grid>
+          <Grid item xs={12} md={12}>
+            <img
+              src={records[2].cover}
+              className='music-cover'
+              alt='Record cover'
+              onClick={() => handleOpen(records[2])}
+            />
+            <h2 className='record-name'>{records[2].name}</h2>
           </Grid>
         </Grid>
         {/* <img src={link.img} alt="Music Platforms" className='platform-logo'/> */}

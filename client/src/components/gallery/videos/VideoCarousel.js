@@ -38,7 +38,8 @@ export default function VideoCarousel() {
 
       const style = {
         position: 'absolute',
-        width: "90%",
+        width: "80vmin",
+        height: "80vmin",
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
@@ -85,7 +86,7 @@ export default function VideoCarousel() {
       function VideoItem({ item })
       {
           return (
-            <div style={{ width: "100%", height: "100%" }}>
+            <div style={{ width: "100%", height: "100%"}}>
             <div className="App">
               {selectedAlbum === "The O2 Academy Islington, London, December 2022" ?
               (<YouTubeO2 embedId={item.id} />)

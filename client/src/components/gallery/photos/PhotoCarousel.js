@@ -30,7 +30,8 @@ export default function PhotoCarousel() {
 
       const style = {
         position: 'absolute',
-        width: "90%",
+        width: "80vmin",
+        height: "80vmin",
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
