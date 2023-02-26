@@ -37,7 +37,7 @@ const TabHeader = styled(TableCell)(({ theme }) => ({
 
 const rows = [
   createData('Sat 18 March 2023', 'The Fiddler\'s Elbow, London', "https://bit.ly/3Wdijlp"),
-  createData('Sat 8 April 2023', 'Bobstock, The Wheatsheaf, Slough', "TBA"),
+  createData('Sat 8 April 2023', 'Bobstock, The Wheatsheaf, Slough', ""),
 
 ];
 
@@ -64,7 +64,7 @@ export default function Upcoming() {
                 {row.date}
               </TabData>
               <TabData align="center">{row.location}</TabData>
-              <TabData align="center">{row.tickets ? <TicketButton sx={{color: "#5C9EA0"}} variant="contained"><a href={row.tickets} target="_blank">Get Tickets</a></TicketButton> : "TBA"}</TabData>
+              <TabData align="center">{row.tickets ? <TicketButton sx={{color: "#5C9EA0"}} variant="contained"><a href={row.tickets} target="_blank">Get Tickets</a></TicketButton> : <p>TBA</p>}</TabData>
             </TableRow>
           ))}
         </TableBody>
