@@ -19,6 +19,7 @@ import Logo from '../assets/images/pesky-logo.png'
 import WhiteLogo from '../assets/images/logo-no-bg.png'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import FacebookIcon from '@mui/icons-material/Facebook'
+import YouTubeIcon from '@mui/icons-material/YouTube'
 import { NavLink } from 'react-router-dom'
 import Spotify from '../assets/images/spotify-icon.png'
 import Tiktok from '../assets/images/tiktok-icon.png'
@@ -26,10 +27,8 @@ import Tiktok from '../assets/images/tiktok-icon.png'
 const drawerWidth = 240
 const navItems = ['About', 'Shows', 'Releases', 'Gallery', 'Contact']
 
-// 'About', 'Shows', 
+// 'About', 'Shows',
 // , 'Gallery', 'Contact'
-
-
 
 function Nav (props) {
   const { window } = props
@@ -55,7 +54,7 @@ function Nav (props) {
         <h1 className='drawer-heading'>Pesky Kidd</h1>
       </Typography>
       <Divider />
-      <List sx={{marginBottom: 5}}>
+      <List sx={{ marginBottom: 5 }}>
         {navItems.map(item => (
           <ListItem
             key={item}
@@ -82,20 +81,34 @@ function Nav (props) {
           href='https://www.instagram.com/peskykiddofficial/'
           target='_blank'
         >
-          <InstagramIcon fontSize='large' sx={{ color: 'black', marginTop: 2 }} />
+          <InstagramIcon
+            fontSize='medium'
+            sx={{ color: 'black' }}
+          />
         </IconButton>
         <IconButton href='https://www.facebook.com/peskyk1dd/' target='_blank'>
-          <FacebookIcon fontSize='large' sx={{ color: 'black', marginTop: 2 }} />
+          <FacebookIcon
+            fontSize='medium'
+            sx={{ color: 'black' }}
+          />
         </IconButton>
         <IconButton
           href='https://open.spotify.com/artist/6GU3Fg2x5wvm0PIHryh3Sf?si=gHjTIqBEShysv1trhsfKFg'
           target='_blank'
-          sx={{marginTop: 2}}
         >
-          <img src={Spotify} className='social-icons' alt='Spotify icon' />
+          <img src={Spotify} className='social-icons-drawer' alt='Spotify icon' />
         </IconButton>
-        <IconButton href='https://www.tiktok.com/@peskykidd' target='_blank' sx={{marginTop: 2}}>
-          <img src={Tiktok} className='social-icons' alt='Spotify icon' />
+        <IconButton
+          href='https://www.tiktok.com/@peskykidd'
+          target='_blank'
+        >
+          <img src={Tiktok} className='social-icons-drawer' alt='Spotify icon' />
+        </IconButton>
+        <IconButton
+          href='https://www.youtube.com/channel/UCStx4rg2pksFfSj2ppvxLXA'
+          target='_blank'
+        >
+          <YouTubeIcon fontSize='medium' sx={{ color: 'black' }} />
         </IconButton>
       </List>
     </Box>
@@ -152,8 +165,8 @@ function Nav (props) {
               <NavLink to='/'>
                 <img src={Logo} className='pesky-logo' alt='Pesky Kidd logo' />
               </NavLink>
-              <NavLink to="/" style={{color: "black", paddingLeft: 10}}>
-              <h1 className='nav-heading'>Pesky Kidd</h1>
+              <NavLink to='/' style={{ color: 'black', paddingLeft: 10 }}>
+                <h1 className='nav-heading'>Pesky Kidd</h1>
               </NavLink>
             </Box>
           </Typography>
@@ -168,38 +181,54 @@ function Nav (props) {
                     color: 'black',
                     fontFamily: 'Courier Prime',
                     fontSize: 22,
-                    fontWeight: "bold"
+                    fontWeight: 'bold'
                   }}
                 >
                   {item}
                 </NavLink>
               </Button>
             ))}
-            <Box sx={{display: "flex", justifyContent: "flex-end", alignItems: "flex-end"}}>
-            <IconButton
-              href='https://www.instagram.com/peskykiddofficial/'
-              target='_blank'
+            <Box
+              sx={{
+                display: 'flex',
+                justifyContent: 'flex-end',
+                alignItems: 'flex-end'
+              }}
             >
-              <InstagramIcon fontSize='large' sx={{ color: 'black' }} />
-            </IconButton>
-            <IconButton
-              href='https://www.facebook.com/peskyk1dd/'
-              target='_blank'
-            >
-              <FacebookIcon fontSize='large' sx={{ color: 'black' }} />
-            </IconButton>
-            <IconButton
-              href='https://open.spotify.com/artist/6GU3Fg2x5wvm0PIHryh3Sf?si=gHjTIqBEShysv1trhsfKFg'
-              target='_blank'
-            >
-              <img src={Spotify} className='social-icons' alt='Spotify icon' />
-            </IconButton>
-            <IconButton
-              href='https://www.tiktok.com/@peskykidd'
-              target='_blank'
-            >
-              <img src={Tiktok} className='social-icons' alt='Spotify icon' />
-            </IconButton>
+              <IconButton
+                href='https://www.instagram.com/peskykiddofficial/'
+                target='_blank'
+              >
+                <InstagramIcon fontSize='large' sx={{ color: 'black' }} />
+              </IconButton>
+              <IconButton
+                href='https://www.facebook.com/peskyk1dd/'
+                target='_blank'
+              >
+                <FacebookIcon fontSize='large' sx={{ color: 'black' }} />
+              </IconButton>
+              <IconButton
+                href='https://open.spotify.com/artist/6GU3Fg2x5wvm0PIHryh3Sf?si=gHjTIqBEShysv1trhsfKFg'
+                target='_blank'
+              >
+                <img
+                  src={Spotify}
+                  className='social-icons'
+                  alt='Spotify icon'
+                />
+              </IconButton>
+              <IconButton
+                href='https://www.tiktok.com/@peskykidd'
+                target='_blank'
+              >
+                <img src={Tiktok} className='social-icons' alt='Spotify icon' />
+              </IconButton>
+              <IconButton
+                href='https://www.youtube.com/channel/UCStx4rg2pksFfSj2ppvxLXA'
+                target='_blank'
+              >
+                <YouTubeIcon fontSize='large' sx={{ color: 'black' }} />
+              </IconButton>
             </Box>
           </Box>
         </Toolbar>

@@ -37,6 +37,8 @@ const TabHeader = styled(TableCell)(({ theme }) => ({
 
 const rows = [
   createData('Sat 18 March 2023', 'The Fiddler\'s Elbow, London', "https://bit.ly/3Wdijlp"),
+  createData('Sat 8 April 2023', 'Bobstock, The Wheatsheaf, Slough', "TBA"),
+
 ];
 
 export default function Upcoming() {

@@ -15,7 +15,7 @@ export default function Band () {
       instrument: 'Keyboard, Backing Vocals',
       img: Lee
     },
-    { name: 'Jack Hinks', instrument: ['Bass'], img: Jack },
+    { name: 'Jack Hinks', instrument: 'Bass', img: Jack },
     { name: 'Johnnie Shinner', instrument: 'Drums', img: Johnnie }
   ])
 
