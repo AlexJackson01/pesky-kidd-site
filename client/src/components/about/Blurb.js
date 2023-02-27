@@ -13,7 +13,7 @@ export default function Blurb () {
         other dates in March and April). Influenced by bands ranging from System
         of a Down to Nirvana, Green Day to Radiohead, the band's sound is melody
         driven, often fusing a traditional writing style and hooky pop-punk and
-        alt rock elements with contemporary production values. The submitted
+        alt rock elements with contemporary production values. The latest
         track "With You" is the first single off the upcoming 2nd album, which
         is expected to be released early Summer 2023 and is a great example of
         what's to come.
