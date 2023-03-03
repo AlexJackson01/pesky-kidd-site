@@ -23,7 +23,7 @@ export default function AboutPage () {
           <Blurb />
         </Grid>
         <Grid item sm={12}>
-          <Band />
+          {/* <Band /> */}
         </Grid>
       </Grid>
       </Fade>
