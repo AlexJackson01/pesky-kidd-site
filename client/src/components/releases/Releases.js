@@ -181,7 +181,6 @@ export default function Releases ({ setRecord }) {
 
         <Grid container spacing={3}>
           <Grid item xs={12} md={6}>
-            
             <img
               src={records[0].cover}
               className='music-cover'
@@ -209,9 +208,7 @@ export default function Releases ({ setRecord }) {
             <h2 className='record-name'>{records[2].name}</h2>
           </Grid>
         </Grid>
-        {/* <img src={link.img} alt="Music Platforms" className='platform-logo'/> */}
       </div>
-      {/* <a href="https://open.spotify.com/artist/6GU3Fg2x5wvm0PIHryh3Sf?si=gHjTIqBEShysv1trhsfKFg"><img src={Spotify} className="spotify-logo" alt="Spotify logo" /></a> */}
 
       <Modal
         open={open}

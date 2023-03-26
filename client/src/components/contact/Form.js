@@ -11,14 +11,20 @@ import { alpha, styled } from '@mui/material/styles'
 init('CRSB7HDdL0UfMj8EF')
 
 const ContactText = styled(TextField)({
-  color: "#FCFBF6",
-    "& .MuiInputLabel-root": { color: "#FCFBF6" },
-    "& .MuiInputBase-root": { color: "#FCFBF6" },
-    // border: "1px solid #5C9EA0",
-    '&.MuiInput': { color: "#FCFBF6"},
-    '& .MuiInput-underline:before': { color: '#FCFBF6', borderBottomColor: '#FCFBF6' },
-    '& .MuiInput-underline:after': { color: '#FCFBF6', borderBottomColor: '#FCFBF6' },
-    input: { color: '#FCFBF6' }
+  color: '#FCFBF6',
+  '& .MuiInputLabel-root': { color: '#FCFBF6' },
+  '& .MuiInputBase-root': { color: '#FCFBF6' },
+  // border: "1px solid #5C9EA0",
+  '&.MuiInput': { color: '#FCFBF6' },
+  '& .MuiInput-underline:before': {
+    color: '#FCFBF6',
+    borderBottomColor: '#FCFBF6'
+  },
+  '& .MuiInput-underline:after': {
+    color: '#FCFBF6',
+    borderBottomColor: '#FCFBF6'
+  },
+  input: { color: '#FCFBF6' }
 })
 
 export default function Form () {
@@ -48,7 +54,9 @@ export default function Form () {
 
   return (
     <div>
-        <h3 className='contact-header'>For general and booking enquiries, contact us here:</h3>
+      <h3 className='contact-header'>
+        For general and booking enquiries, contact us here:
+      </h3>
       <form ref={form} onSubmit={sendEmail}>
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
           <Box
@@ -57,12 +65,12 @@ export default function Form () {
               justifyContent: 'center',
               alignItems: 'center',
               paddingBottom: '20px',
-              color: "#FCFBF6",
+              color: '#FCFBF6'
             }}
           >
             <AccountCircle sx={{ color: '#FCFBF6', mr: 1, my: 0.5 }} />
             <ContactText
-            id="input-with-sx"
+              id='input-with-sx'
               label='Name'
               name='user_name'
               variant='standard'
@@ -99,12 +107,12 @@ export default function Form () {
         >
           <ContactText
             multiline
-            id="input-with-sx"
+            id='input-with-sx'
             label='Message'
             name='user_message'
             rows={4}
             variant='standard'
-            sx={{color: "white"}}
+            sx={{ color: 'white' }}
           />
         </Box>
         <p>
@@ -121,7 +129,7 @@ export default function Form () {
               backgroundColor: '#5C9EA0',
               marginBottom: '20px',
               '&:hover': {
-                backgroundColor: '#444E5A',
+                backgroundColor: '#444E5A'
               }
             }}
           >

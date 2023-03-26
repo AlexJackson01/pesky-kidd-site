@@ -76,7 +76,7 @@ export default function VideoCarousel () {
   function VideoItem ({ item }) {
     return (
       <div style={{ width: '100%', height: '100%' }}>
-        <div className='App'>
+        <div>
           {selectedAlbum ===
           'The O2 Academy Islington, London, December 2022' ? (
             <YouTubeO2 embedId={item.id} />

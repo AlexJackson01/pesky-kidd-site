@@ -9,6 +9,7 @@ export default function GalleryPage () {
     <div className='app-body container'>
       <h1 className='header'>Gallery</h1>
       <Fade bottom>
+        ~
         <Grid
           container
           spacing={0}

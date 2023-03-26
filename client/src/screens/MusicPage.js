@@ -9,21 +9,21 @@ export default function MusicPage ({ setRecord, record }) {
     <div className='app-body container'>
       <h1 className='header'>Releases</h1>
       <Fade bottom>
-      <Grid container spacing={8}>
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={6}
-          lg={6}
-          sx={{ justifyContent: 'center', alignItems: 'center' }}
-        >
-          <SpotifyPlayer />
+        <Grid container spacing={8}>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={6}
+            lg={6}
+            sx={{ justifyContent: 'center', alignItems: 'center' }}
+          >
+            <SpotifyPlayer />
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={6}>
+            <Releases record={record} />
+          </Grid>
         </Grid>
-        <Grid item xs={12} sm={12} md={6} lg={6}>
-          <Releases record={record} />
-        </Grid>
-      </Grid>
       </Fade>
     </div>
   )

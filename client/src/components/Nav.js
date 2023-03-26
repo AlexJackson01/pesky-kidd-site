@@ -27,9 +27,6 @@ import Tiktok from '../assets/images/tiktok-icon.png'
 const drawerWidth = 240
 const navItems = ['About', 'Shows', 'Releases', 'Gallery', 'Contact']
 
-// 'About', 'Shows',
-// , 'Gallery', 'Contact'
-
 function Nav (props) {
   const { window } = props
   const [mobileOpen, setMobileOpen] = React.useState(false)
@@ -81,28 +78,27 @@ function Nav (props) {
           href='https://www.instagram.com/peskykiddofficial/'
           target='_blank'
         >
-          <InstagramIcon
-            fontSize='medium'
-            sx={{ color: 'black' }}
-          />
+          <InstagramIcon fontSize='medium' sx={{ color: 'black' }} />
         </IconButton>
         <IconButton href='https://www.facebook.com/peskyk1dd/' target='_blank'>
-          <FacebookIcon
-            fontSize='medium'
-            sx={{ color: 'black' }}
-          />
+          <FacebookIcon fontSize='medium' sx={{ color: 'black' }} />
         </IconButton>
         <IconButton
           href='https://open.spotify.com/artist/6GU3Fg2x5wvm0PIHryh3Sf?si=gHjTIqBEShysv1trhsfKFg'
           target='_blank'
         >
-          <img src={Spotify} className='social-icons-drawer' alt='Spotify icon' />
+          <img
+            src={Spotify}
+            className='social-icons-drawer'
+            alt='Spotify icon'
+          />
         </IconButton>
-        <IconButton
-          href='https://www.tiktok.com/@peskykidd'
-          target='_blank'
-        >
-          <img src={Tiktok} className='social-icons-drawer' alt='Spotify icon' />
+        <IconButton href='https://www.tiktok.com/@peskykidd' target='_blank'>
+          <img
+            src={Tiktok}
+            className='social-icons-drawer'
+            alt='Spotify icon'
+          />
         </IconButton>
         <IconButton
           href='https://www.youtube.com/channel/UCStx4rg2pksFfSj2ppvxLXA'
@@ -144,9 +140,7 @@ function Nav (props) {
               <img src={Logo} className='pesky-drawer' alt='Pesky Kidd logo' />
             </NavLink>
           </Typography>
-          <Typography sx={{ display: { md: 'none' } }}>
-            {/* <h1 className='nav-heading'>Pesky Kidd</h1> */}
-          </Typography>
+          <Typography sx={{ display: { md: 'none' } }}></Typography>
           <Typography
             variant='h6'
             component='div'
