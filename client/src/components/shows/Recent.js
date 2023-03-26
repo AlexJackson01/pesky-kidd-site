@@ -36,6 +36,7 @@ const TabHeader = styled(TableCell)(({ theme }) => ({
   }))
 
 const rows = [
+  createData('Sat 18 March 2023', 'The Fiddler\'s Elbow, London'),
   createData('Sat 4 February 2023', 'InPop - supporting Pulled Apart By Horses, O2 Academy Islington, London'),
   createData('Fri 9 December 2022', 'InPop Presents, O2 Academy Islington, London'),
   createData('Sat 29 October 2022', 'The Warrington Hotel, London'),

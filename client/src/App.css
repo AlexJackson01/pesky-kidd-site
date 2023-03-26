@@ -1,9 +1,4 @@
-@font-face {
-  font-family: 'NexaSlab';
-  src: local('NexaSlab'), url(./assets/fonts/NexaSlab.otf) format('opentype');
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
-}
+
 
 @font-face {
   font-family: 'Linotype Cutter';
