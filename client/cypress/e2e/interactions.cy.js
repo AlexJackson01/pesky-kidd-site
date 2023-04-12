@@ -32,7 +32,7 @@ describe("Get Tickets button", () => {
   });
 
   it("has a link attached to it", () => {
-    cy.get("[data-cy='ticket-link']")
+    cy.get("[data-cy='ticket-button'] > a")
       .should("have.attr", "href")
       .and("include", "http");
   });
