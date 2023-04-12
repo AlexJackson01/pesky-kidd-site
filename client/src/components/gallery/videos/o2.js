@@ -1,4 +1,4 @@
-export const O2 = [
+export const o2 = [
   {
     name: 'Photo1',
     id: "oA0ZTwbW_rI"

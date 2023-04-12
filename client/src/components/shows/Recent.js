@@ -51,7 +51,7 @@ export default function Recent() {
 
   return (
     <div>
-      <h2 className='shows-subtitle' onClick={() => setShowPrevious(!showPrevious)}>See Previous Shows</h2>
+      <h3 className='shows-subtitle' data-cy='see-previous-shows-header' onClick={() => setShowPrevious(!showPrevious)}>See Previous Shows</h3>
 
       {showPrevious && (
         <TableContainer sx={{ display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center"}}>

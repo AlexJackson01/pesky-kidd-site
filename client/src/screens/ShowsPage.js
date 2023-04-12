@@ -8,7 +8,7 @@ export default function ShowsPage () {
 
   return (
     <div className='app-body container'>
-      <h1 className='header'>Upcoming Shows</h1>
+      <h2 className='header'>Upcoming Shows</h2>
 
       <Fade bottom>
         <Grid container spacing={0}>

@@ -6,7 +6,7 @@ import { Fade } from 'react-reveal'
 export default function AboutPage () {
   return (
     <div className='app-body container'>
-      <h1 className='header'>About</h1>
+      <h2 className='header'>About</h2>
       <Fade bottom>
         <Grid
           container

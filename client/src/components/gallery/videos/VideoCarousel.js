@@ -5,7 +5,7 @@ import O2Cover from '../../../assets/images/O2Cover.png'
 import AbbeyCover from '../../../assets/images/abbey.png'
 import O2Cover_2 from '../../../assets/images/O2Cover_2.jpg'
 import { O2_2 } from './O2_2'
-import { O2 } from './O2'
+import { o2 } from './o2'
 import { Abbey } from './Abbey'
 import YouTubeO2 from './YouTubeO2'
 import YouTubeAbbey from './YouTubeAbbey'
@@ -94,7 +94,7 @@ export default function VideoCarousel () {
     if (item.id === 1) {
       setPhotos(O2_2)
     } else if (item.id === 2) {
-      setPhotos(O2)
+      setPhotos(o2)
     } else {
       setPhotos(Abbey)
     }

@@ -7,7 +7,7 @@ import { Fade } from 'react-reveal'
 export default function GalleryPage () {
   return (
     <div className='app-body container'>
-      <h1 className='header'>Gallery</h1>
+      <h2 className='header'>Gallery</h2>
       <Fade bottom>
         ~
         <Grid

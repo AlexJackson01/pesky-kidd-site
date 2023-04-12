@@ -7,7 +7,7 @@ import { Fade } from 'react-reveal'
 export default function ContactPage () {
   return (
     <div className='app-body container'>
-      <h1 className='header'>Contact</h1>
+      <h2 className='header'>Contact</h2>
       <Fade bottom>
         <Grid
           container

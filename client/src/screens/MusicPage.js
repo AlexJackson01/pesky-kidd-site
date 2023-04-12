@@ -7,7 +7,7 @@ import { Fade } from 'react-reveal'
 export default function MusicPage ({ setRecord, record }) {
   return (
     <div className='app-body container'>
-      <h1 className='header'>Releases</h1>
+      <h2 className='header'>Releases</h2>
       <Fade bottom>
         <Grid container spacing={8}>
           <Grid

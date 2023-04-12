@@ -187,7 +187,7 @@ export default function Releases ({ setRecord }) {
               alt='Record cover'
               onClick={() => handleOpen(records[0])}
             />
-            <h2 className='record-name'>{records[0].name}</h2>
+            <h3 className='record-name' data-cy='record-1'>{records[0].name}</h3>
           </Grid>
           <Grid item xs={12} md={6}>
             <img
@@ -196,7 +196,7 @@ export default function Releases ({ setRecord }) {
               alt='Record cover'
               onClick={() => handleOpen(records[1])}
             />
-            <h2 className='record-name'>{records[1].name}</h2>
+            <h3 className='record-name' data-cy='record-2'>{records[1].name}</h3>
           </Grid>
           <Grid item xs={12} md={12}>
             <img
@@ -205,7 +205,7 @@ export default function Releases ({ setRecord }) {
               alt='Record cover'
               onClick={() => handleOpen(records[2])}
             />
-            <h2 className='record-name'>{records[2].name}</h2>
+            <h3 className='record-name' data-cy='record-3'>{records[2].name}</h3>
           </Grid>
         </Grid>
       </div>
