@@ -12,7 +12,7 @@ export default function Spotify () {
   const theme = '0' // or 'white'
 
   return (
-    <div className='player-div'>
+    <div className='player-div' data-cy='spotify-player'>
       <SpotifyPlayer
         uri='spotify:artist:6GU3Fg2x5wvm0PIHryh3Sf'
         size={size}

@@ -122,7 +122,8 @@ export default function Form () {
             size='large'
             sx={{
               textTransform: 'none',
-              fontFamily: 'NexaSlab',
+              fontFamily: 'Courier New',
+              fontWeight: "bold",
               textAlign: 'center',
               margin: '0 auto',
               display: 'block',

@@ -53,6 +53,7 @@ export default function Recent() {
     <div>
       <h3 className='shows-subtitle' data-cy='see-previous-shows-header' onClick={() => setShowPrevious(!showPrevious)}>See Previous Shows</h3>
 
+    <div data-cy='previous-shows-table'>≈
       {showPrevious && (
         <TableContainer sx={{ display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center"}}>
       <Table sx={{ maxWidth: 900, backgroundColor: "transparent" }} aria-label="simple table">
@@ -80,7 +81,7 @@ export default function Recent() {
     </TableContainer>
       )}
 
-    
+    </div>
     </div>
   );
 }
