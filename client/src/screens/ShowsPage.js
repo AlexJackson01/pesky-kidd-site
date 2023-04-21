@@ -24,7 +24,7 @@ export default function ShowsPage () {
               alignItems: 'center'
             }}
           >
-            <Upcoming />
+            {/* <Upcoming /> */}
           </Grid>
 
           <Grid

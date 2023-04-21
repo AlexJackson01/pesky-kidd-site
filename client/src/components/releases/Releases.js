@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import CR from '../../assets/images/CR.jpg'
 import OH from '../../assets/images/OH.jpg'
 import WY from '../../assets/images/WY.jpg'
+import req from '../../assets/images/req.jpg'
 import Spotify from '../../assets/images/spotify.svg'
 import Youtube from '../../assets/images/Youtube.png'
 import Apple from '../../assets/images/apple.svg'
@@ -16,6 +17,28 @@ import { Grid } from '@mui/material'
 export default function Releases ({ setRecord }) {
   const [trackToListen, setTrackToListen] = useState(null)
   const [records, setRecords] = useState([
+    {
+      name: 'Requiem',
+      cover: req,
+      links: [
+        {
+          img: Spotify,
+          link: 'https://open.spotify.com/album/0s30bnVXv2Ynbw4JsJ0c4F'
+        },
+        {
+          img: Youtube,
+          link: 'https://music.youtube.com/playlist?list=OLAK5uy_mKwpsHWemU1jJDUXeCqiJqig6UBOafwtA'
+        },
+        {
+          img: Apple,
+          link: 'https://music.apple.com/us/album/requiem-single/1676683953'
+        },
+        {
+          img: Amazon,
+          link: 'https://music.amazon.co.uk/albums/B0BXXZTSPT'
+        }
+      ]
+    },
     {
       name: 'With You',
       cover: WY,
@@ -198,7 +221,7 @@ export default function Releases ({ setRecord }) {
             />
             <h3 className='record-name' data-cy='record-2'>{records[1].name}</h3>
           </Grid>
-          <Grid item xs={12} md={12}>
+          <Grid item xs={12} md={6}>
             <img
               src={records[2].cover}
               className='music-cover'
@@ -206,6 +229,15 @@ export default function Releases ({ setRecord }) {
               onClick={() => handleOpen(records[2])}
             />
             <h3 className='record-name' data-cy='record-3'>{records[2].name}</h3>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <img
+              src={records[3].cover}
+              className='music-cover'
+              alt='Record cover'
+              onClick={() => handleOpen(records[3])}
+            />
+            <h3 className='record-name' data-cy='record-3'>{records[3].name}</h3>
           </Grid>
         </Grid>
       </div>

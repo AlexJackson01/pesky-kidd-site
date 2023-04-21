@@ -6,7 +6,7 @@ export default function Spotify () {
   // size may also be a plain string using the presets 'large' or 'compact'
   const size = {
     width: '95%',
-    height: 500
+    height: 750
   }
   const view = 'list' // or 'coverart'
   const theme = '0' // or 'white'
