@@ -168,38 +168,33 @@ export default function Releases({ setRecord }) {
           spacing={0}
           sx={{ justifyContent: "center", alignItems: "center" }}
         >
-          <Grid item xs={12} md={6}>
-            <a href={musicLinks[0].link} target="_blank">
-              <img
-                src={musicLinks[0].img}
-                alt="Music Platforms"
-                className="platform-logo"
-              />
-            </a>
-            <a href={musicLinks[2].link} target="_blank">
-              <img
-                src={musicLinks[2].img}
-                alt="Music Platforms"
-                className="platform-logo"
-              />
-            </a>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <a href={musicLinks[1].link} target="_blank">
-              <img
-                src={musicLinks[1].img}
-                alt="Music Platforms"
-                className="platform-logo"
-              />
-            </a>
-            <a href={musicLinks[3].link} target="_blank">
-              <img
-                src={musicLinks[3].img}
-                alt="Music Platforms"
-                className="platform-logo"
-              />
-            </a>
-          </Grid>
+          {musicLinks
+            .filter((link, i) => i % 2 === 0)
+            .map((link, i) => (
+              <Grid item xs={12} md={6}>
+                <a href={link.link} target="_blank">
+                  <img
+                    src={link.img}
+                    alt="Music Platforms"
+                    className="platform-logo"
+                  />
+                </a>
+              </Grid>
+            ))}
+
+          {musicLinks
+            .filter((link, i) => i % 2 !== 0)
+            .map((link, i) => (
+              <Grid item xs={12} md={6}>
+                <a href={link.link} target="_blank">
+                  <img
+                    src={link.img}
+                    alt="Music Platforms"
+                    className="platform-logo"
+                  />
+                </a>
+              </Grid>
+            ))}
         </Grid>
 
         <Grid container spacing={3}>
