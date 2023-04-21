@@ -89,12 +89,12 @@ export default function Releases({ setRecord }) {
           link: "https://open.spotify.com/album/5Uau7xKpTO5DmxId7pBnxk?si=YJ0LsM74TEK5AzNFlI8xPQ",
         },
         {
-          img: Youtube,
-          link: "https://music.youtube.com/playlist?list=OLAK5uy_md0Dgq6v7vLzoBz3Ibm9uywK-SsfeEdo8&feature=share",
-        },
-        {
           img: Apple,
           link: "https://music.apple.com/us/album/open-heart/1610851063",
+        },
+        {
+          img: Youtube,
+          link: "https://music.youtube.com/playlist?list=OLAK5uy_md0Dgq6v7vLzoBz3Ibm9uywK-SsfeEdo8&feature=share",
         },
         {
           img: Amazon,
@@ -168,33 +168,17 @@ export default function Releases({ setRecord }) {
           spacing={0}
           sx={{ justifyContent: "center", alignItems: "center" }}
         >
-          {musicLinks
-            .filter((link, i) => i % 2 === 0)
-            .map((link, i) => (
-              <Grid item xs={12} md={6}>
-                <a href={link.link} target="_blank">
-                  <img
-                    src={link.img}
-                    alt="Music Platforms"
-                    className="platform-logo"
-                  />
-                </a>
-              </Grid>
-            ))}
-
-          {musicLinks
-            .filter((link, i) => i % 2 !== 0)
-            .map((link, i) => (
-              <Grid item xs={12} md={6}>
-                <a href={link.link} target="_blank">
-                  <img
-                    src={link.img}
-                    alt="Music Platforms"
-                    className="platform-logo"
-                  />
-                </a>
-              </Grid>
-            ))}
+          {musicLinks.map((link, i) => (
+            <Grid item xs={12} md={6}>
+              <a href={link.link} target="_blank">
+                <img
+                  src={link.img}
+                  alt="Music Platforms"
+                  className="platform-logo"
+                />
+              </a>
+            </Grid>
+          ))}
         </Grid>
 
         <Grid container spacing={3}>
